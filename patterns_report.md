@@ -18,6 +18,8 @@ labelling and synthesis.
 
 ## 1. Thematic clusters — what people build
 
+![Project themes by size](charts/01_theme_sizes.png)
+
 Fourteen coherent themes emerged. (Silhouette scores were low and flat across k —
 expected for short, overlapping texts — so boundaries are soft and k was chosen for
 interpretability.)
@@ -49,6 +51,8 @@ the third pillar and almost entirely a recent arrival.
 ---
 
 ## 2. Trends over time — the big rotation
+
+![The NFT to AI rotation](charts/02_nft_ai_rotation.png)
 
 Theme share by time bucket (oldest → newest), via the tech lexicon:
 
@@ -90,6 +94,8 @@ as the more organic signal.
 
 ## 3. Tech & buzzwords
 
+![Most-mentioned technologies](charts/03_tech_overall.png)
+
 Most-mentioned technologies/primitives across the whole corpus:
 
 | Share | Technology |
@@ -123,6 +129,8 @@ cross-chain swaps), **Lens Protocol** (social), **Uniswap v4 hooks**, **Pyth** (
 
 ## 4. Outliers & novelty
 
+![Outlier similarity distribution](charts/04_outliers.png)
+
 123 projects (~1.5%) sit far from every theme centroid. They split in two:
 
 **Data-quality noise (real, and worth knowing).** A meaningful slice of the long tail —
@@ -149,6 +157,8 @@ the next theme might nucleate (much as lone AI experiments did before bucket 4).
 ---
 
 ## 5. Sub-themes within the two largest clusters
+
+![Sub-themes of the two largest clusters](charts/05_subthemes.png)
 
 Splitting the two biggest themes at higher resolution (`subcluster_themes.py`, sub-KMeans
 on the same embeddings) reveals their internal structure. Sub-theme labels are in the
@@ -184,6 +194,9 @@ case of sponsor gravity shaping what gets built.
 ---
 
 ## 6. Which themes actually win prizes
+
+![Era-adjusted prize lift by theme](charts/06_prize_lift.png)
+![The era confound in win-rates](charts/06b_era_confound.png)
 
 `prize_count > 0` (project won ≥ 1 sponsor prize) is a win proxy. **Overall win-rate is
 39.7%** — ETHGlobal hands out many sponsor prizes, so winning *something* is common.
@@ -229,6 +242,8 @@ Headlines:
 ---
 
 ## 7. Why AI agents over-perform — decomposing the 1.19× lift
+
+![Coinbase dominates agent prizes](charts/07_agent_sponsors.png)
 
 The agent advantage is real but **not** broad organic quality. Decomposed three ways
 (`agent_deepdive.py`), it resolves into two coupled artifacts: a dedicated prize-rich
@@ -276,6 +291,10 @@ happened to agents at ETHOnline 2025 / New Delhi, and to Fusion+ swaps in §6).
 ---
 
 ## 8. The sponsor-alpha model — generalizing §7
+
+![Specialist vs generalist sponsors](charts/08_earmark.png)
+![Themed-event premium vs trap](charts/08b_themed_premium.png)
+![Decay of category win-lift over time](charts/08c_decay.png)
 
 §7 showed the agent edge was really *Coinbase money in a themed hackathon*. Does that
 pattern generalize? Yes — into a three-part model (`sponsor_alpha.py`) that turns "where's
@@ -364,6 +383,8 @@ exactly in the over-subscribed Unite Defi bucket.
 ---
 
 ## 9. Forward-looking forecast — where's the alpha at upcoming hackathons?
+
+![Forward alpha index by category](charts/09_alpha_forecast.png)
 
 §1–§8 are backward-looking. This turns the model into a **forward signal** for the next
 ETHGlobal events, by scraping real event data from `ethglobal.com`

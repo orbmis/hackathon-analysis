@@ -34,6 +34,7 @@ Each stage writes artifacts consumed by the next. Run them in order from the rep
 | 5. Sponsor-alpha model | `sponsor_alpha.py` | `sponsor_alpha.json` | §6, §8 |
 | 6. Scrape event data | `scrape_events.py` | `event_meta.csv`, `event_sponsors.csv` | §9 |
 | 7. Forward forecast | `forecast_alpha.py` | `alpha_forecast.{csv,json}`, `sponsor_recurrence.csv` | §9 |
+| 8. Visualizations | `visualize.py` | `charts/*.png` | all |
 
 > Theme/sub-theme names are human-assigned in `cluster_labels.json` / `subtheme_labels.json` — edit
 > those and re-run stage 2/3 to relabel (embeddings are cached, so it's instant and deterministic).
@@ -42,7 +43,7 @@ Each stage writes artifacts consumed by the next. Run them in order from the rep
 
 ```bash
 # scrapers use stdlib urllib; analysis needs these
-pip install numpy pandas scikit-learn sentence-transformers certifi
+pip install numpy pandas scikit-learn sentence-transformers certifi matplotlib
 
 python3 pull_projects.py          # ~10 min, rate-limited; resumable (skips saved rows)
 python3 analyze_descriptions.py   # downloads all-MiniLM-L6-v2 (~80MB) on first run
@@ -51,7 +52,11 @@ python3 agent_deepdive.py
 python3 sponsor_alpha.py
 python3 scrape_events.py          # ~3 min, rate-limited scrape of ethglobal.com
 python3 forecast_alpha.py
+python3 visualize.py              # renders charts/*.png (matplotlib)
 ```
+
+See **[`charts/`](charts/)** for the full chart gallery (one+ per report section); the same
+figures are embedded inline in `patterns_report.md`. Add `matplotlib` to the install line.
 
 Both scrapers (`pull_projects.py`, `scrape_events.py`) self-rate-limit with random delays and retry
 on transient failures. `pull_projects.py` is resumable — re-run it (or use `--start-page N`) and it
@@ -88,6 +93,8 @@ agent_deepdive.py           Stage 4 — decompose the AI-agent prize lift
 sponsor_alpha.py            Stage 5 — earmark scores, themed-event premium, decay
 scrape_events.py            Stage 6 — scrape event dates + per-sponsor $ pools
 forecast_alpha.py           Stage 7 — recurrence model + category alpha index
+visualize.py                Stage 8 — render charts/*.png from the artifacts
+charts/                     Generated PNG charts + gallery (charts/README.md)
 cluster_labels.json         Human theme names (cluster_id -> label/gloss)
 subtheme_labels.json        Human sub-theme names
 patterns_report.md          Findings write-up (§1–§9)
