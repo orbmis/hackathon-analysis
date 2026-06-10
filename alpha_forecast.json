@@ -1,0 +1,329 @@
+{
+  "today": "2026-06-10",
+  "recurrence_window": [
+    "sanfrancisco2024",
+    "bangkok",
+    "agents",
+    "trifecta",
+    "taipei",
+    "newyork2025",
+    "newdelhi",
+    "buenosaires"
+  ],
+  "category_alpha": [
+    {
+      "category": "DeFi lending, perps & collateral",
+      "earmarked_usd_exp": 11417,
+      "supply_pct": 13.2,
+      "recent_winlift": 1.37,
+      "momentum": 0.43,
+      "trap_premium": 0.0,
+      "raw": 13556.729784000001,
+      "specialists": [
+        [
+          "Uniswap Foundation",
+          0.806,
+          14166
+        ]
+      ],
+      "alpha_index": 100.0,
+      "label": "CROWDED \u2014 $ present but saturated"
+    },
+    {
+      "category": "On-chain trading tools & dev infrastructure",
+      "earmarked_usd_exp": 4051,
+      "supply_pct": 11.6,
+      "recent_winlift": 1.12,
+      "momentum": 0.32,
+      "trap_premium": 0.0,
+      "raw": 4130.85351724138,
+      "specialists": [
+        [
+          "EVVM",
+          0.222,
+          18250
+        ]
+      ],
+      "alpha_index": 30.5,
+      "label": "Thin \u2014 weak/\u25be specialist $"
+    },
+    {
+      "category": "Cross-chain atomic swaps (1inch Fusion+)",
+      "earmarked_usd_exp": 11914,
+      "supply_pct": 1.5,
+      "recent_winlift": 1.14,
+      "momentum": -0.12,
+      "trap_premium": -0.67,
+      "raw": 2988.1566,
+      "specialists": [
+        [
+          "1inch",
+          0.611,
+          19500
+        ]
+      ],
+      "alpha_index": 22.0,
+      "label": "TRAP \u2014 re-saturates under its bounty (\u00a78)"
+    },
+    {
+      "category": "AI agents & autonomous assistants",
+      "earmarked_usd_exp": 10282,
+      "supply_pct": 14.5,
+      "recent_winlift": 0.85,
+      "momentum": -0.52,
+      "trap_premium": 0.47,
+      "raw": 2411.0624,
+      "specialists": [
+        [
+          "Coinbase Developer Platform",
+          0.667,
+          15416
+        ]
+      ],
+      "alpha_index": 17.8,
+      "label": "COOLING \u2014 edge decaying"
+    },
+    {
+      "category": "Creator & social-token platforms",
+      "earmarked_usd_exp": 0,
+      "supply_pct": 5.4,
+      "recent_winlift": 1.42,
+      "momentum": 0.54,
+      "trap_premium": 0.0,
+      "raw": 0.0,
+      "specialists": [],
+      "alpha_index": 0.0,
+      "label": "No specialist $ (no sponsor edge)"
+    },
+    {
+      "category": "Crowdfunding, donations & creator monetization",
+      "earmarked_usd_exp": 0,
+      "supply_pct": 5.6,
+      "recent_winlift": 1.3,
+      "momentum": 0.47,
+      "trap_premium": 0.0,
+      "raw": 0.0,
+      "specialists": [],
+      "alpha_index": 0.0,
+      "label": "No specialist $ (no sponsor edge)"
+    },
+    {
+      "category": "Crypto payments, wallets & off-ramps",
+      "earmarked_usd_exp": 0,
+      "supply_pct": 15.4,
+      "recent_winlift": 0.85,
+      "momentum": -0.19,
+      "trap_premium": 0.0,
+      "raw": 0.0,
+      "specialists": [],
+      "alpha_index": 0.0,
+      "label": "No specialist $ (no sponsor edge)"
+    },
+    {
+      "category": "DAO tooling & governance",
+      "earmarked_usd_exp": 0,
+      "supply_pct": 0.7,
+      "recent_winlift": 1.01,
+      "momentum": -0.23,
+      "trap_premium": -0.15,
+      "raw": 0.0,
+      "specialists": [],
+      "alpha_index": 0.0,
+      "label": "No specialist $ (no sponsor edge)"
+    },
+    {
+      "category": "DeFi portfolio & yield automation",
+      "earmarked_usd_exp": 0,
+      "supply_pct": 4.8,
+      "recent_winlift": 0.55,
+      "momentum": -0.34,
+      "trap_premium": 0.0,
+      "raw": 0.0,
+      "specialists": [],
+      "alpha_index": 0.0,
+      "label": "No specialist $ (no sponsor edge)"
+    },
+    {
+      "category": "Decentralized storage & content sharing",
+      "earmarked_usd_exp": 0,
+      "supply_pct": 4.5,
+      "recent_winlift": 0.67,
+      "momentum": 0.4,
+      "trap_premium": -0.1,
+      "raw": 0.0,
+      "specialists": [],
+      "alpha_index": 0.0,
+      "label": "No specialist $ (no sponsor edge)"
+    },
+    {
+      "category": "NFTs, collectibles & creator marketplaces",
+      "earmarked_usd_exp": 0,
+      "supply_pct": 1.7,
+      "recent_winlift": 0.2,
+      "momentum": -0.31,
+      "trap_premium": -0.21,
+      "raw": 0.0,
+      "specialists": [],
+      "alpha_index": 0.0,
+      "label": "No specialist $ (no sponsor edge)"
+    },
+    {
+      "category": "On-chain gaming & play-to-earn",
+      "earmarked_usd_exp": 0,
+      "supply_pct": 7.5,
+      "recent_winlift": 0.88,
+      "momentum": -0.14,
+      "trap_premium": 0.0,
+      "raw": 0.0,
+      "specialists": [],
+      "alpha_index": 0.0,
+      "label": "No specialist $ (no sponsor edge)"
+    },
+    {
+      "category": "Web3 social networks & web2 bridges",
+      "earmarked_usd_exp": 0,
+      "supply_pct": 3.0,
+      "recent_winlift": 0.44,
+      "momentum": -0.37,
+      "trap_premium": 0.0,
+      "raw": 0.0,
+      "specialists": [],
+      "alpha_index": 0.0,
+      "label": "No specialist $ (no sponsor edge)"
+    },
+    {
+      "category": "ZK identity, privacy & verifiable reputation",
+      "earmarked_usd_exp": 0,
+      "supply_pct": 10.7,
+      "recent_winlift": 1.15,
+      "momentum": 0.23,
+      "trap_premium": -0.01,
+      "raw": 0.0,
+      "specialists": [],
+      "alpha_index": 0.0,
+      "label": "No specialist $ (no sponsor edge)"
+    }
+  ],
+  "upcoming": [
+    {
+      "event": "ETHGlobal New York 2026",
+      "slug": "newyork2026",
+      "date": "2026-06-12",
+      "predicted_specialist_sponsors": [
+        [
+          "Uniswap Foundation",
+          "DeFi lending, perps & collateral"
+        ],
+        [
+          "Coinbase Developer Platform",
+          "AI agents & autonomous assistants"
+        ],
+        [
+          "1inch",
+          "Cross-chain atomic swaps (1inch Fusion+)"
+        ]
+      ],
+      "top_alpha_categories": [
+        "DeFi lending, perps & collateral",
+        "On-chain trading tools & dev infrastructure",
+        "Cross-chain atomic swaps (1inch Fusion+)"
+      ]
+    },
+    {
+      "event": "ETHGlobal Lisbon 2026",
+      "slug": "lisbon2026",
+      "date": "2026-07-24",
+      "predicted_specialist_sponsors": [
+        [
+          "Uniswap Foundation",
+          "DeFi lending, perps & collateral"
+        ],
+        [
+          "Coinbase Developer Platform",
+          "AI agents & autonomous assistants"
+        ],
+        [
+          "1inch",
+          "Cross-chain atomic swaps (1inch Fusion+)"
+        ]
+      ],
+      "top_alpha_categories": [
+        "DeFi lending, perps & collateral",
+        "On-chain trading tools & dev infrastructure",
+        "Cross-chain atomic swaps (1inch Fusion+)"
+      ]
+    },
+    {
+      "event": "ETHOnline 2026",
+      "slug": "ethonline2026",
+      "date": "2026-09-04",
+      "predicted_specialist_sponsors": [
+        [
+          "Uniswap Foundation",
+          "DeFi lending, perps & collateral"
+        ],
+        [
+          "Coinbase Developer Platform",
+          "AI agents & autonomous assistants"
+        ],
+        [
+          "1inch",
+          "Cross-chain atomic swaps (1inch Fusion+)"
+        ]
+      ],
+      "top_alpha_categories": [
+        "DeFi lending, perps & collateral",
+        "On-chain trading tools & dev infrastructure",
+        "Cross-chain atomic swaps (1inch Fusion+)"
+      ]
+    },
+    {
+      "event": "ETHGlobal Tokyo 2026",
+      "slug": "tokyo2026",
+      "date": "2026-09-25",
+      "predicted_specialist_sponsors": [
+        [
+          "Uniswap Foundation",
+          "DeFi lending, perps & collateral"
+        ],
+        [
+          "Coinbase Developer Platform",
+          "AI agents & autonomous assistants"
+        ],
+        [
+          "1inch",
+          "Cross-chain atomic swaps (1inch Fusion+)"
+        ]
+      ],
+      "top_alpha_categories": [
+        "DeFi lending, perps & collateral",
+        "On-chain trading tools & dev infrastructure",
+        "Cross-chain atomic swaps (1inch Fusion+)"
+      ]
+    },
+    {
+      "event": "ETHGlobal Mumbai",
+      "slug": "mumbai",
+      "date": "2026-11-06",
+      "predicted_specialist_sponsors": [
+        [
+          "Uniswap Foundation",
+          "DeFi lending, perps & collateral"
+        ],
+        [
+          "Coinbase Developer Platform",
+          "AI agents & autonomous assistants"
+        ],
+        [
+          "1inch",
+          "Cross-chain atomic swaps (1inch Fusion+)"
+        ]
+      ],
+      "top_alpha_categories": [
+        "DeFi lending, perps & collateral",
+        "On-chain trading tools & dev infrastructure",
+        "Cross-chain atomic swaps (1inch Fusion+)"
+      ]
+    }
+  ]
+}
