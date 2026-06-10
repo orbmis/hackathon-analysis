@@ -1,0 +1,8 @@
+# Regenerable embedding cache (rebuilt by analyze_descriptions.py)
+.cache_embeddings.npy
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

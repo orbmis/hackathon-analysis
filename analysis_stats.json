@@ -1,0 +1,1051 @@
+{
+  "n_rows": 8200,
+  "k": 14,
+  "silhouette_by_k": {
+    "12": 0.035,
+    "14": 0.0352,
+    "16": 0.0256,
+    "18": 0.0264,
+    "20": 0.0256,
+    "22": 0.0225,
+    "24": 0.024,
+    "26": 0.0249,
+    "28": 0.0244,
+    "30": 0.0243,
+    "32": 0.0231
+  },
+  "time_buckets": {
+    "1": {
+      "count": 1367,
+      "id_range": [
+        8088,
+        9454
+      ],
+      "top_events": [
+        "ETHOnline 2022",
+        "ETHSanFrancisco 2022",
+        "ETHBogotá",
+        "HackFS 2022"
+      ]
+    },
+    "2": {
+      "count": 1367,
+      "id_range": [
+        9455,
+        10821
+      ],
+      "top_events": [
+        "Road to Web3",
+        "NFTHack 2022",
+        "ETHNewYork 2022",
+        "ETHAmsterdam"
+      ]
+    },
+    "3": {
+      "count": 1366,
+      "id_range": [
+        10822,
+        12187
+      ],
+      "top_events": [
+        "HackMoney 2021",
+        "ETHOnline 2021",
+        "NFTHack",
+        "HackFS 2021"
+      ]
+    },
+    "4": {
+      "count": 1367,
+      "id_range": [
+        12188,
+        13554
+      ],
+      "top_events": [
+        "Agentic Ethereum",
+        "ETHGlobal Taipei",
+        "ETHGlobal Prague",
+        "HackFS"
+      ]
+    },
+    "5": {
+      "count": 1366,
+      "id_range": [
+        13555,
+        14920
+      ],
+      "top_events": [
+        "Unite Defi",
+        "ETHGlobal New Delhi",
+        "ETHGlobal Cannes",
+        "ETHGlobal New York 2025"
+      ]
+    },
+    "6": {
+      "count": 1367,
+      "id_range": [
+        14921,
+        16287
+      ],
+      "top_events": [
+        "ETHOnline 2025",
+        "ETHGlobal Buenos Aires",
+        "ETHGlobal New Delhi"
+      ]
+    }
+  },
+  "event_chronology": [
+    {
+      "event": "Hack FEVM",
+      "count": 79,
+      "median_id": 8128.0,
+      "event_rank": 1
+    },
+    {
+      "event": "ETHSanFrancisco 2022",
+      "count": 287,
+      "median_id": 8306.0,
+      "event_rank": 2
+    },
+    {
+      "event": "ETHBogotá",
+      "count": 215,
+      "median_id": 8559.0,
+      "event_rank": 3
+    },
+    {
+      "event": "ETHOnline 2022",
+      "count": 363,
+      "median_id": 8843.0,
+      "event_rank": 4
+    },
+    {
+      "event": "ETHMexico",
+      "count": 94,
+      "median_id": 9077.5,
+      "event_rank": 5
+    },
+    {
+      "event": "Metabolism",
+      "count": 106,
+      "median_id": 9175.5,
+      "event_rank": 6
+    },
+    {
+      "event": "HackFS 2022",
+      "count": 196,
+      "median_id": 9329.5,
+      "event_rank": 7
+    },
+    {
+      "event": "ETHNewYork 2022",
+      "count": 243,
+      "median_id": 9547.0,
+      "event_rank": 8
+    },
+    {
+      "event": "ETHAmsterdam",
+      "count": 167,
+      "median_id": 9754.0,
+      "event_rank": 9
+    },
+    {
+      "event": "DAOHacks",
+      "count": 130,
+      "median_id": 9890.5,
+      "event_rank": 10
+    },
+    {
+      "event": "LFGrow",
+      "count": 123,
+      "median_id": 10029.0,
+      "event_rank": 11
+    },
+    {
+      "event": "BuildQuest",
+      "count": 138,
+      "median_id": 10159.5,
+      "event_rank": 12
+    },
+    {
+      "event": "Road to Web3",
+      "count": 308,
+      "median_id": 10382.5,
+      "event_rank": 13
+    },
+    {
+      "event": "NFTHack 2022",
+      "count": 255,
+      "median_id": 10664.0,
+      "event_rank": 14
+    },
+    {
+      "event": "Web3Jam",
+      "count": 102,
+      "median_id": 10842.5,
+      "event_rank": 15
+    },
+    {
+      "event": "UniCode",
+      "count": 59,
+      "median_id": 10923.0,
+      "event_rank": 16
+    },
+    {
+      "event": "ETHOnline 2021",
+      "count": 211,
+      "median_id": 11058.0,
+      "event_rank": 17
+    },
+    {
+      "event": "HackFS 2021",
+      "count": 144,
+      "median_id": 11233.5,
+      "event_rank": 18
+    },
+    {
+      "event": "HackMoney 2021",
+      "count": 216,
+      "median_id": 11408.5,
+      "event_rank": 19
+    },
+    {
+      "event": "Web3 Weekend",
+      "count": 89,
+      "median_id": 11552.0,
+      "event_rank": 20
+    },
+    {
+      "event": "Scaling Ethereum",
+      "count": 140,
+      "median_id": 11678.5,
+      "event_rank": 21
+    },
+    {
+      "event": "NFTHack",
+      "count": 178,
+      "median_id": 11837.5,
+      "event_rank": 22
+    },
+    {
+      "event": "MarketMake",
+      "count": 131,
+      "median_id": 11995.0,
+      "event_rank": 23
+    },
+    {
+      "event": "ETHOnline",
+      "count": 181,
+      "median_id": 12151.0,
+      "event_rank": 24
+    },
+    {
+      "event": "HackFS",
+      "count": 131,
+      "median_id": 12307.0,
+      "event_rank": 25
+    },
+    {
+      "event": "HackMoney",
+      "count": 117,
+      "median_id": 12432.0,
+      "event_rank": 26
+    },
+    {
+      "event": "Agentic Ethereum",
+      "count": 517,
+      "median_id": 12749.0,
+      "event_rank": 27
+    },
+    {
+      "event": "ETHGlobal Trifecta - Agents",
+      "count": 44,
+      "median_id": 13029.5,
+      "event_rank": 28
+    },
+    {
+      "event": "ETHGlobal Trifecta - Zero Knowledge",
+      "count": 41,
+      "median_id": 13072.0,
+      "event_rank": 29
+    },
+    {
+      "event": "ETHGlobal Trifecta - Trusted Execution Environments",
+      "count": 32,
+      "median_id": 13108.5,
+      "event_rank": 30
+    },
+    {
+      "event": "ETHGlobal Taipei",
+      "count": 226,
+      "median_id": 13237.5,
+      "event_rank": 31
+    },
+    {
+      "event": "ETHGlobal Prague",
+      "count": 217,
+      "median_id": 13459.0,
+      "event_rank": 32
+    },
+    {
+      "event": "ETHGlobal Cannes",
+      "count": 333,
+      "median_id": 13734.0,
+      "event_rank": 33
+    },
+    {
+      "event": "Unite Defi",
+      "count": 391,
+      "median_id": 14096.0,
+      "event_rank": 34
+    },
+    {
+      "event": "ETHGlobal New York 2025",
+      "count": 275,
+      "median_id": 14429.0,
+      "event_rank": 35
+    },
+    {
+      "event": "ETHGlobal New Delhi",
+      "count": 614,
+      "median_id": 14873.5,
+      "event_rank": 36
+    },
+    {
+      "event": "ETHOnline 2025",
+      "count": 634,
+      "median_id": 15497.5,
+      "event_rank": 37
+    },
+    {
+      "event": "ETHGlobal Buenos Aires",
+      "count": 473,
+      "median_id": 16051.0,
+      "event_rank": 38
+    }
+  ],
+  "tech": {
+    "overall_counts": {
+      "DeFi / trading": 1623,
+      "NFT / collectibles": 1468,
+      "AI / agents": 1156,
+      "Cross-chain / interop": 605,
+      "Stablecoins / payments": 572,
+      "Gaming / metaverse": 457,
+      "Wallets": 450,
+      "Privacy": 440,
+      "Identity / proof-of-human": 435,
+      "DAO / governance": 376,
+      "ZK / zero-knowledge": 238,
+      "Social / SocialFi": 202,
+      "Buzz: seamless/frictionless": 157,
+      "Uniswap hooks": 144,
+      "Oracles": 143,
+      "Buzz: trustless": 132,
+      "Prediction / betting": 115,
+      "RWA / tokenization": 106,
+      "Rollups / L2 / scaling": 81,
+      "Account abstraction": 69,
+      "x402 / agentic payments": 62,
+      "TEE / verifiable compute": 44,
+      "Buzz: composable": 36,
+      "Buzz: permissionless": 35,
+      "Buzz: non-custodial": 32,
+      "MEV": 27,
+      "Restaking / EigenLayer": 21
+    },
+    "overall_share": {
+      "DeFi / trading": 0.1979,
+      "NFT / collectibles": 0.179,
+      "AI / agents": 0.141,
+      "Cross-chain / interop": 0.0738,
+      "Stablecoins / payments": 0.0698,
+      "Gaming / metaverse": 0.0557,
+      "Wallets": 0.0549,
+      "Privacy": 0.0537,
+      "Identity / proof-of-human": 0.053,
+      "DAO / governance": 0.0459,
+      "ZK / zero-knowledge": 0.029,
+      "Social / SocialFi": 0.0246,
+      "Buzz: seamless/frictionless": 0.0191,
+      "Uniswap hooks": 0.0176,
+      "Oracles": 0.0174,
+      "Buzz: trustless": 0.0161,
+      "Prediction / betting": 0.014,
+      "RWA / tokenization": 0.0129,
+      "Rollups / L2 / scaling": 0.0099,
+      "Account abstraction": 0.0084,
+      "x402 / agentic payments": 0.0076,
+      "TEE / verifiable compute": 0.0054,
+      "Buzz: composable": 0.0044,
+      "Buzz: permissionless": 0.0043,
+      "Buzz: non-custodial": 0.0039,
+      "MEV": 0.0033,
+      "Restaking / EigenLayer": 0.0026
+    },
+    "share_by_bucket": {
+      "1": {
+        "ZK / zero-knowledge": 0.0337,
+        "AI / agents": 0.0117,
+        "Account abstraction": 0.0095,
+        "x402 / agentic payments": 0.0,
+        "DeFi / trading": 0.101,
+        "Uniswap hooks": 0.0066,
+        "Rollups / L2 / scaling": 0.0095,
+        "Oracles": 0.0146,
+        "NFT / collectibles": 0.2465,
+        "DAO / governance": 0.0666,
+        "Identity / proof-of-human": 0.0417,
+        "Privacy": 0.0607,
+        "Stablecoins / payments": 0.0366,
+        "RWA / tokenization": 0.0037,
+        "Cross-chain / interop": 0.0468,
+        "Wallets": 0.0622,
+        "MEV": 0.0029,
+        "TEE / verifiable compute": 0.0,
+        "Restaking / EigenLayer": 0.0,
+        "Prediction / betting": 0.0037,
+        "Gaming / metaverse": 0.0578,
+        "Social / SocialFi": 0.0432,
+        "Buzz: trustless": 0.011,
+        "Buzz: permissionless": 0.008,
+        "Buzz: non-custodial": 0.0059,
+        "Buzz: composable": 0.0073,
+        "Buzz: seamless/frictionless": 0.008
+      },
+      "2": {
+        "ZK / zero-knowledge": 0.011,
+        "AI / agents": 0.0088,
+        "Account abstraction": 0.0007,
+        "x402 / agentic payments": 0.0,
+        "DeFi / trading": 0.1002,
+        "Uniswap hooks": 0.0066,
+        "Rollups / L2 / scaling": 0.0059,
+        "Oracles": 0.0117,
+        "NFT / collectibles": 0.3921,
+        "DAO / governance": 0.1024,
+        "Identity / proof-of-human": 0.0285,
+        "Privacy": 0.0256,
+        "Stablecoins / payments": 0.0278,
+        "RWA / tokenization": 0.0124,
+        "Cross-chain / interop": 0.0278,
+        "Wallets": 0.0454,
+        "MEV": 0.0007,
+        "TEE / verifiable compute": 0.0,
+        "Restaking / EigenLayer": 0.0,
+        "Prediction / betting": 0.0051,
+        "Gaming / metaverse": 0.1156,
+        "Social / SocialFi": 0.049,
+        "Buzz: trustless": 0.0051,
+        "Buzz: permissionless": 0.0051,
+        "Buzz: non-custodial": 0.0022,
+        "Buzz: composable": 0.0066,
+        "Buzz: seamless/frictionless": 0.0066
+      },
+      "3": {
+        "ZK / zero-knowledge": 0.0007,
+        "AI / agents": 0.0073,
+        "Account abstraction": 0.0007,
+        "x402 / agentic payments": 0.0,
+        "DeFi / trading": 0.2291,
+        "Uniswap hooks": 0.0381,
+        "Rollups / L2 / scaling": 0.0344,
+        "Oracles": 0.0242,
+        "NFT / collectibles": 0.295,
+        "DAO / governance": 0.0381,
+        "Identity / proof-of-human": 0.011,
+        "Privacy": 0.0198,
+        "Stablecoins / payments": 0.049,
+        "RWA / tokenization": 0.0102,
+        "Cross-chain / interop": 0.0249,
+        "Wallets": 0.0366,
+        "MEV": 0.0022,
+        "TEE / verifiable compute": 0.0007,
+        "Restaking / EigenLayer": 0.0,
+        "Prediction / betting": 0.0102,
+        "Gaming / metaverse": 0.0593,
+        "Social / SocialFi": 0.0132,
+        "Buzz: trustless": 0.0073,
+        "Buzz: permissionless": 0.0037,
+        "Buzz: non-custodial": 0.0029,
+        "Buzz: composable": 0.0044,
+        "Buzz: seamless/frictionless": 0.0051
+      },
+      "4": {
+        "ZK / zero-knowledge": 0.0395,
+        "AI / agents": 0.4053,
+        "Account abstraction": 0.0088,
+        "x402 / agentic payments": 0.0015,
+        "DeFi / trading": 0.2092,
+        "Uniswap hooks": 0.0183,
+        "Rollups / L2 / scaling": 0.0037,
+        "Oracles": 0.0124,
+        "NFT / collectibles": 0.0549,
+        "DAO / governance": 0.0344,
+        "Identity / proof-of-human": 0.0812,
+        "Privacy": 0.0732,
+        "Stablecoins / payments": 0.06,
+        "RWA / tokenization": 0.0117,
+        "Cross-chain / interop": 0.0402,
+        "Wallets": 0.068,
+        "MEV": 0.0037,
+        "TEE / verifiable compute": 0.0154,
+        "Restaking / EigenLayer": 0.0154,
+        "Prediction / betting": 0.0161,
+        "Gaming / metaverse": 0.0395,
+        "Social / SocialFi": 0.0219,
+        "Buzz: trustless": 0.0168,
+        "Buzz: permissionless": 0.0007,
+        "Buzz: non-custodial": 0.0037,
+        "Buzz: composable": 0.0044,
+        "Buzz: seamless/frictionless": 0.0461
+      },
+      "5": {
+        "ZK / zero-knowledge": 0.0439,
+        "AI / agents": 0.1823,
+        "Account abstraction": 0.0124,
+        "x402 / agentic payments": 0.0088,
+        "DeFi / trading": 0.3448,
+        "Uniswap hooks": 0.0154,
+        "Rollups / L2 / scaling": 0.0029,
+        "Oracles": 0.0124,
+        "NFT / collectibles": 0.0476,
+        "DAO / governance": 0.0132,
+        "Identity / proof-of-human": 0.0666,
+        "Privacy": 0.0578,
+        "Stablecoins / payments": 0.101,
+        "RWA / tokenization": 0.0212,
+        "Cross-chain / interop": 0.1962,
+        "Wallets": 0.0512,
+        "MEV": 0.0059,
+        "TEE / verifiable compute": 0.011,
+        "Restaking / EigenLayer": 0.0,
+        "Prediction / betting": 0.0146,
+        "Gaming / metaverse": 0.0256,
+        "Social / SocialFi": 0.0059,
+        "Buzz: trustless": 0.0366,
+        "Buzz: permissionless": 0.0022,
+        "Buzz: non-custodial": 0.0022,
+        "Buzz: composable": 0.0022,
+        "Buzz: seamless/frictionless": 0.0322
+      },
+      "6": {
+        "ZK / zero-knowledge": 0.0454,
+        "AI / agents": 0.2304,
+        "Account abstraction": 0.0183,
+        "x402 / agentic payments": 0.0351,
+        "DeFi / trading": 0.2034,
+        "Uniswap hooks": 0.0205,
+        "Rollups / L2 / scaling": 0.0029,
+        "Oracles": 0.0293,
+        "NFT / collectibles": 0.038,
+        "DAO / governance": 0.0205,
+        "Identity / proof-of-human": 0.0892,
+        "Privacy": 0.0849,
+        "Stablecoins / payments": 0.1441,
+        "RWA / tokenization": 0.0183,
+        "Cross-chain / interop": 0.1068,
+        "Wallets": 0.0658,
+        "MEV": 0.0044,
+        "TEE / verifiable compute": 0.0051,
+        "Restaking / EigenLayer": 0.0,
+        "Prediction / betting": 0.0344,
+        "Gaming / metaverse": 0.0366,
+        "Social / SocialFi": 0.0146,
+        "Buzz: trustless": 0.0198,
+        "Buzz: permissionless": 0.0059,
+        "Buzz: non-custodial": 0.0066,
+        "Buzz: composable": 0.0015,
+        "Buzz: seamless/frictionless": 0.0168
+      }
+    }
+  },
+  "ngrams": {
+    "unigrams": [
+      [
+        "nft",
+        1186
+      ],
+      [
+        "ai",
+        1170
+      ],
+      [
+        "nfts",
+        702
+      ],
+      [
+        "protocol",
+        571
+      ],
+      [
+        "defi",
+        561
+      ],
+      [
+        "cross",
+        431
+      ],
+      [
+        "real",
+        399
+      ],
+      [
+        "wallet",
+        392
+      ],
+      [
+        "tokens",
+        379
+      ],
+      [
+        "game",
+        371
+      ],
+      [
+        "social",
+        366
+      ],
+      [
+        "smart",
+        356
+      ],
+      [
+        "token",
+        344
+      ],
+      [
+        "dao",
+        343
+      ],
+      [
+        "time",
+        336
+      ],
+      [
+        "agent",
+        333
+      ],
+      [
+        "marketplace",
+        281
+      ],
+      [
+        "earn",
+        278
+      ],
+      [
+        "community",
+        271
+      ],
+      [
+        "trading",
+        265
+      ],
+      [
+        "dapp",
+        264
+      ],
+      [
+        "agents",
+        262
+      ],
+      [
+        "1inch",
+        253
+      ],
+      [
+        "content",
+        250
+      ],
+      [
+        "creators",
+        237
+      ],
+      [
+        "swaps",
+        236
+      ],
+      [
+        "payments",
+        234
+      ],
+      [
+        "ipfs",
+        222
+      ],
+      [
+        "network",
+        215
+      ],
+      [
+        "yield",
+        214
+      ],
+      [
+        "rewards",
+        211
+      ],
+      [
+        "secure",
+        208
+      ],
+      [
+        "contract",
+        207
+      ],
+      [
+        "people",
+        203
+      ],
+      [
+        "market",
+        201
+      ],
+      [
+        "assets",
+        198
+      ],
+      [
+        "liquidity",
+        190
+      ],
+      [
+        "like",
+        189
+      ],
+      [
+        "contracts",
+        179
+      ],
+      [
+        "mint",
+        178
+      ]
+    ],
+    "bigrams": [
+      [
+        "real time",
+        184
+      ],
+      [
+        "ai agent",
+        157
+      ],
+      [
+        "ai agents",
+        155
+      ],
+      [
+        "smart contract",
+        122
+      ],
+      [
+        "smart contracts",
+        119
+      ],
+      [
+        "1inch fusion",
+        108
+      ],
+      [
+        "social media",
+        88
+      ],
+      [
+        "nft marketplace",
+        74
+      ],
+      [
+        "ai driven",
+        63
+      ],
+      [
+        "lens protocol",
+        61
+      ],
+      [
+        "zero knowledge",
+        59
+      ],
+      [
+        "open source",
+        55
+      ],
+      [
+        "cross swaps",
+        49
+      ],
+      [
+        "atomic swaps",
+        47
+      ],
+      [
+        "zk proofs",
+        45
+      ],
+      [
+        "privacy preserving",
+        45
+      ],
+      [
+        "peer peer",
+        42
+      ],
+      [
+        "real estate",
+        39
+      ],
+      [
+        "nft collection",
+        39
+      ],
+      [
+        "prediction market",
+        39
+      ],
+      [
+        "social network",
+        37
+      ],
+      [
+        "content creators",
+        37
+      ],
+      [
+        "cross swap",
+        35
+      ],
+      [
+        "uniswap v4",
+        35
+      ],
+      [
+        "buy sell",
+        35
+      ],
+      [
+        "earn rewards",
+        35
+      ],
+      [
+        "prediction markets",
+        31
+      ],
+      [
+        "uniswap v3",
+        31
+      ],
+      [
+        "non custodial",
+        31
+      ],
+      [
+        "evm chains",
+        30
+      ],
+      [
+        "cross defi",
+        29
+      ],
+      [
+        "limit order",
+        29
+      ],
+      [
+        "nft collections",
+        28
+      ],
+      [
+        "erc 20",
+        27
+      ],
+      [
+        "defi protocols",
+        27
+      ],
+      [
+        "natural language",
+        26
+      ],
+      [
+        "play earn",
+        24
+      ],
+      [
+        "erc20 tokens",
+        24
+      ],
+      [
+        "knowledge proofs",
+        24
+      ],
+      [
+        "lending protocol",
+        23
+      ]
+    ],
+    "trigrams": [
+      [
+        "zero knowledge proofs",
+        24
+      ],
+      [
+        "limit order protocol",
+        17
+      ],
+      [
+        "cross atomic swaps",
+        16
+      ],
+      [
+        "1inch limit order",
+        14
+      ],
+      [
+        "autonomous ai agents",
+        14
+      ],
+      [
+        "real time market",
+        10
+      ],
+      [
+        "erc 20 tokens",
+        10
+      ],
+      [
+        "extension 1inch fusion",
+        10
+      ],
+      [
+        "uniswap v4 hooks",
+        10
+      ],
+      [
+        "1inch cross swap",
+        9
+      ],
+      [
+        "pyth price feeds",
+        9
+      ],
+      [
+        "uniswap v4 hook",
+        9
+      ],
+      [
+        "non fungible tokens",
+        9
+      ],
+      [
+        "social media dapp",
+        9
+      ],
+      [
+        "play earn game",
+        9
+      ],
+      [
+        "atomic swaps evm",
+        8
+      ],
+      [
+        "cross swap fusion",
+        8
+      ],
+      [
+        "real time analytics",
+        8
+      ],
+      [
+        "1inch limit orders",
+        8
+      ],
+      [
+        "ai agents analyze",
+        7
+      ],
+      [
+        "ai agent marketplace",
+        7
+      ],
+      [
+        "swaps 1inch fusion",
+        7
+      ],
+      [
+        "avail nexus sdk",
+        7
+      ],
+      [
+        "zero knowledge proof",
+        7
+      ],
+      [
+        "extending 1inch fusion",
+        7
+      ],
+      [
+        "evm non evm",
+        7
+      ],
+      [
+        "1inch fusion protocol",
+        6
+      ],
+      [
+        "ai prediction market",
+        6
+      ],
+      [
+        "trading card game",
+        6
+      ],
+      [
+        "smart contract escrow",
+        6
+      ],
+      [
+        "non evm chains",
+        6
+      ],
+      [
+        "non fungible token",
+        6
+      ],
+      [
+        "swap fusion swaps",
+        6
+      ],
+      [
+        "real time insights",
+        6
+      ],
+      [
+        "erc 20 token",
+        5
+      ],
+      [
+        "open source projects",
+        5
+      ],
+      [
+        "smart contract security",
+        5
+      ],
+      [
+        "1inch fusion swaps",
+        5
+      ],
+      [
+        "real time updates",
+        5
+      ],
+      [
+        "aave credit delegation",
+        5
+      ]
+    ]
+  },
+  "n_outliers": 123
+}

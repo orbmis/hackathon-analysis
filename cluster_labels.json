@@ -1,0 +1,16 @@
+{
+  "0": {"label": "On-chain trading tools & dev infrastructure", "gloss": "Explorers, RPC/oracle plumbing, limit-order & TWAP engines, dev tooling. (Keyword list polluted by 'testdata' junk submissions.)"},
+  "1": {"label": "DeFi lending, perps & collateral", "gloss": "Lending/borrowing protocols, perpetuals, collateralization, LP & impermanent-loss management."},
+  "2": {"label": "Creator & social-token platforms", "gloss": "Social feeds, tipping, meme/creator tokens, Lens-based apps. (Keywords show 'tsete/test' spam submissions.)"},
+  "3": {"label": "AI agents & autonomous assistants", "gloss": "Autonomous/agentic AI for trading, portfolios, ops and on-chain actions."},
+  "4": {"label": "DAO tooling & governance", "gloss": "DAO management, treasuries, proposals, voting and onboarding."},
+  "5": {"label": "NFTs, collectibles & creator marketplaces", "gloss": "NFT minting, marketplaces, collections and creator monetization."},
+  "6": {"label": "Crypto payments, wallets & off-ramps", "gloss": "Stablecoin payments, smart/mobile wallets, cards, SMS/email rails, off-ramps."},
+  "7": {"label": "Decentralized storage & content sharing", "gloss": "IPFS/Filecoin file sharing, decentralized CDN, content monetization."},
+  "8": {"label": "Crowdfunding, donations & creator monetization", "gloss": "Kickstarter-style funding, charitable giving, retroactive/public-goods rewards."},
+  "9": {"label": "DeFi portfolio & yield automation", "gloss": "AI-assisted DeFi dashboards, automated yield/portfolio strategies across protocols."},
+  "10": {"label": "Web3 social networks & web2 bridges", "gloss": "Web3-native social/professional networks and web2-to-web3 connectors."},
+  "11": {"label": "Cross-chain atomic swaps (1inch Fusion+)", "gloss": "Trustless cross-chain swaps, mostly 1inch Fusion+ extensions to non-EVM chains; a prize-driven burst."},
+  "12": {"label": "On-chain gaming & play-to-earn", "gloss": "Crypto-native games, staking-to-play, NFT collectibles, tournaments."},
+  "13": {"label": "ZK identity, privacy & verifiable reputation", "gloss": "Zero-knowledge proofs, stealth addresses, privacy-preserving identity, credentials & reputation."}
+}
