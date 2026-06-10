@@ -148,18 +148,103 @@ the next theme might nucleate (much as lone AI experiments did before bucket 4).
 
 ---
 
+## 5. Sub-themes within the two largest clusters
+
+Splitting the two biggest themes at higher resolution (`subcluster_themes.py`, sub-KMeans
+on the same embeddings) reveals their internal structure. Sub-theme labels are in the
+enriched CSV's `subtheme_label` column.
+
+**NFTs, collectibles & creator marketplaces (1,112)** is not one thing — it's six:
+
+| Sub-theme | Projects | Share |
+|-----------|---------:|------:|
+| NFT marketplaces & real-world utility | 262 | 24% |
+| NFT-Fi: lending, collateral & fractionalization | 261 | 23% |
+| Creator media & streaming (NFT memberships) | 207 | 19% |
+| NFT gaming & collectible cards | 145 | 13% |
+| Generative & collaborative art NFTs | 124 | 11% |
+| Minting tools & launchpads | 113 | 10% |
+
+The notable find: ~23% of "NFT" projects are actually **NFT-Fi** (using NFTs as
+financial collateral — lending, renting, fractionalizing), i.e. closer to DeFi than to
+art. Pure art NFTs are only ~11%.
+
+**Crypto payments, wallets & off-ramps (779)** splits cleanly into four:
+
+| Sub-theme | Projects | Share |
+|-----------|---------:|------:|
+| Stablecoin payments, payroll & subscriptions (PYUSD) | 222 | 28% |
+| Wallets (smart / hardware / privacy) | 212 | 27% |
+| P2P transfers, payment links & tipping | 192 | 25% |
+| Neobank, savings & everyday-finance apps | 153 | 20% |
+
+PYUSD (PayPal's stablecoin) is a recurring anchor in the largest sub-theme — another
+case of sponsor gravity shaping what gets built.
+
+---
+
+## 6. Which themes actually win prizes
+
+`prize_count > 0` (project won ≥ 1 sponsor prize) is a win proxy. **Overall win-rate is
+39.7%** — ETHGlobal hands out many sponsor prizes, so winning *something* is common.
+
+**The raw cross-tab is a trap — it's dominated by an era confound.** Win-rate by cohort
+falls from ~61% in the oldest buckets to ~22% in the newest (older events list prizes far
+more completely / had higher prize-to-project ratios). So a naive ranking just surfaces
+*old* themes (NFTs, DAOs, social) as "winners." The honest metric is **era-adjusted lift**:
+a theme's win-rate vs. the baseline of *its own* time cohorts.
+
+| Theme | n | Win % | Era-adj. lift | Read |
+|-------|--:|------:|:-------------:|------|
+| **AI agents & autonomous assistants** | 781 | 41.0 | **1.19×** | Genuinely over-performs |
+| Crowdfunding & creator monetization | 581 | 43.4 | 1.07× | Slight edge |
+| ZK identity, privacy & reputation | 531 | 39.0 | 1.05× | Slight edge |
+| Web3 social & web2 bridges | 477 | 51.2 | 1.04× | ~Average (era-inflated raw) |
+| NFTs & creator marketplaces | 1,112 | 48.7 | 1.03× | ~Average (era-inflated raw) |
+| On-chain gaming | 431 | 38.3 | 1.00× | Average |
+| Crypto payments & wallets | 779 | 35.3 | 0.98× | Average |
+| DeFi lending & perps | 713 | 32.8 | 0.98× | Average |
+| DAO tooling & governance | 281 | 50.9 | 0.97× | ~Average (era-inflated raw) |
+| On-chain trading infra | 684 | 32.6 | 0.93× | Slight drag |
+| **DeFi portfolio & yield automation** | 321 | 27.1 | **0.82×** | Saturated / under-performs |
+| **Cross-chain atomic swaps (1inch)** | 299 | 18.1 | **0.63×** | Heavily under-performs |
+
+Headlines:
+
+- **AI agents are the only clear over-performer (1.19×)** even after era adjustment —
+  driven by concentrated sponsor demand. Coinbase Developer Platform alone accounts for
+  **181 of the prizes** won by agent projects; sponsors actively bought the agent wave.
+- **The NFT/DAO/social "wins" evaporate once era-adjusted** — they were high only because
+  they're old-era themes, when prizes were plentiful. On a level field they're ~average.
+- **Cross-chain swaps are the worst bet (0.63×)** — a textbook saturation story: the
+  1inch-sponsored *Unite Defi* flood meant hundreds of near-identical Fusion+ swap clones
+  chasing a handful of 1inch prizes (36 of them). DeFi yield automation (0.82×) is the
+  next-most-crowded-yet-thin field.
+- **Takeaway for a builder:** novelty with a hungry sponsor (agents) beats piling into a
+  single-sponsor bounty everyone else also targeted (Fusion+ swaps).
+
+> Caveat: era adjustment controls for cohort prize density but not for sponsor mix or
+> the explorer's data completeness; treat lifts as directional, not precise.
+
+---
+
 ## Methodology & reproducibility
 
 - **Pipeline:** `analyze_descriptions.py` — load → chronology/time-buckets → NLP tables
   & tech lexicon → embed (cached to `.cache_embeddings.npy`) → KMeans (k swept 12–32,
   silhouette-selected, `random_state=42`) → outlier flag (bottom 1.5% by cosine-to-
   centroid) → c-TF-IDF keywords → outputs.
+- **Sub-themes (§5):** `subcluster_themes.py` — sub-KMeans within the two largest themes
+  using the cached embeddings; writes `subcluster_summaries.json` and the `subtheme_label`
+  column. Sub-theme names live in `subtheme_labels.json` (edit + re-run to relabel).
+- **Prizes (§6):** computed from the `prizes` / `prize_count` columns, era-adjusted against
+  per-`time_bucket` baselines.
 - **Outputs:** `cluster_summaries.json` (per-cluster keywords + representatives),
-  `analysis_stats.json` (trends, n-grams, chronology), and
+  `analysis_stats.json` (trends, n-grams, chronology), `subcluster_summaries.json`, and
   **`ethglobal_projects_enriched.csv`** — every project tagged with `theme_label`,
-  `cluster_keywords`, `tech_tags`, `time_bucket`, `event_rank`, `is_outlier`,
-  `centroid_sim`. Theme names live in `cluster_labels.json` (edit + re-run to relabel;
-  embeddings are cached so it's instant and deterministic).
+  `subtheme_label`, `cluster_keywords`, `tech_tags`, `time_bucket`, `event_rank`,
+  `is_outlier`, `centroid_sim`. Theme names live in `cluster_labels.json` (edit + re-run to
+  relabel; embeddings are cached so it's instant and deterministic).
 - **Known limitations:** (1) `id` is a catalogue-order proxy, not exact dates — coarse
   trends only; (2) soft cluster boundaries (low silhouette) — themes overlap at the
   edges; (3) themed hackathons bias the mix; (4) ~1–2% junk submissions remain in the
@@ -167,5 +252,6 @@ the next theme might nucleate (much as lone AI experiments did before bucket 4).
 
 ### Suggested next steps
 - Scrape real event dates to replace the `id` proxy and get a true timeline.
-- Split the two largest themes (NFTs, payments) at higher k for finer sub-themes.
-- Cross-tabulate `theme_label` against `prizes` to see which themes actually *win*.
+- ~~Split the two largest themes at higher k for finer sub-themes~~ — done (§5).
+- ~~Cross-tabulate `theme_label` against `prizes`~~ — done (§6).
+- Drill into the AI-agent over-performance: which sub-types and sponsors drive the 1.19× lift?

@@ -1,0 +1,266 @@
+{
+  "NFTs, collectibles & creator marketplaces": {
+    "theme_id": 5,
+    "size": 1112,
+    "sub_k": 6,
+    "subclusters": [
+      {
+        "subcluster": "nft:2",
+        "size": 262,
+        "share_of_theme": 0.236,
+        "keywords": [
+          "storage",
+          "explorer",
+          "information",
+          "privacy",
+          "oracles",
+          "pfp",
+          "api",
+          "metadata",
+          "protocol",
+          "tools"
+        ],
+        "representative_descriptions": [
+          "Creating NFT's from a creators perspective.",
+          "Providing real world utility for NFTS with a simple platform",
+          "A brand New NFTFi Primitive that allows users to safely Lend, Rent, or Short NFTs",
+          "NFT Generator for helping  the users to BUIDL their own NFT collection quickly.",
+          "Tools for building interactive NFTs, including a deployed library and two smart contracts.",
+          "This project brings customizability to any NFT project. I make use of IPNS to provide  gas-less NFT updates."
+        ]
+      },
+      {
+        "subcluster": "nft:3",
+        "size": 261,
+        "share_of_theme": 0.235,
+        "keywords": [
+          "liquidity",
+          "collateral",
+          "lending",
+          "fractional",
+          "borrow",
+          "estate",
+          "lottery",
+          "loan",
+          "real estate",
+          "renting"
+        ],
+        "representative_descriptions": [
+          "A platform to borrow and lend NFT, and use NFT as a collateral.",
+          "A secondary marketplace for NFTs that is affordable, rewarding and enjoyable. 1) 0.5% Transaction Fees 2) Native Token Rewards 3) Stunning UX 4) Customisable Auctions",
+          "NFT asset Marketplace which lets creators compose multiple NFTs and create a new usable contract that streams value when consumers consume it and compensates the NFT owners in realtime.",
+          "Decentralized nft marketplace for buyer minting their own nfts",
+          "A multi-chain NFT marketplace and wallet where each user can buy NFTs by credit card and cash and can view their NFTs from different chains.",
+          "A new way to sell NFTs where instead of doing an auction you just deposit ETH that gets put into a yield farm. Then we do a lottery for who gets the NFT with the probability in proportion to how much you stake."
+        ]
+      },
+      {
+        "subcluster": "nft:5",
+        "size": 207,
+        "share_of_theme": 0.186,
+        "keywords": [
+          "streaming",
+          "livepeer",
+          "live streaming",
+          "music",
+          "social network",
+          "livestream",
+          "listen",
+          "content creators",
+          "content",
+          "hosted"
+        ],
+        "representative_descriptions": [
+          "An NFT membership platform to support your favourite creators.",
+          "Decentralized Live Streaming platform with NFT clips. This helps Streamers & Artists generate new revenue streams with NFT royalties.",
+          "All-in-one platform to consume, create, grow & monetize content with NFT memberships.",
+          "A decentralized platform that enables young local musicians to share their music live with the world from wherever they are and even hold concerts. Don't miss out on NFTs released from your favourite music shows and show off your love for the art, and the artist.",
+          "Content sharing platform that allows creators to give access to their content by NFTs.",
+          "A decentralized platform for musicians to play and create music with instruments. Each piece they play makes a generative art that transforms into an NFT. These NFTs are minted by the artist for you to buy.You can use these NFTs to attend exclusive shows that are streamed online."
+        ]
+      },
+      {
+        "subcluster": "nft:4",
+        "size": 145,
+        "share_of_theme": 0.13,
+        "keywords": [
+          "battle",
+          "chess",
+          "card game",
+          "player",
+          "game",
+          "players",
+          "earn game",
+          "powers",
+          "na vi",
+          "na"
+        ],
+        "representative_descriptions": [
+          "A NFT based game where each owned NFT gets evolved and has some powers.",
+          "A Gaming Platform, where players can earn rewards and then convert them to NFTs, which are interoperable between different games inside the ecosystem.",
+          "A simple NFT card game designed to delight and entertain and help users have fun",
+          "We want to create interactive NFTs and bring a pinch of gaming experience into common NFTs world.",
+          "NFT Board game with NFT Ad space integration. Players can customize the game globally and earn prizes.",
+          "NFTrials is a free to play game that allows players to earn NFTs. Each player has equal chance of winning. NFTrials also seeks to acquaint players with the concept of NFTs while promoting African culture by integrating art created by Africans."
+        ]
+      },
+      {
+        "subcluster": "nft:0",
+        "size": 124,
+        "share_of_theme": 0.112,
+        "keywords": [
+          "pixel",
+          "comics",
+          "chalkboard",
+          "mars",
+          "art",
+          "collaborative",
+          "generated art",
+          "digital art",
+          "art pieces",
+          "marketplace artists"
+        ],
+        "representative_descriptions": [
+          "A one-of-a-kind set of NFTs whose holders can participate in a global, collaborative art project. Each NFT gives you the right to draw on a region of a shared canvas. You can also resell your NFTs to other users.",
+          "A NFT project for creators, mostly artists to interact with their fans, sell their contents as NFTs and also receive donations and support.",
+          "Creating NFTs that enable organic discovery for the artist, and rewards for fans sharing the content.",
+          "Nifty Pixels is an NFT marketplace where you can create, buy, and sell pixel art NFTs",
+          "Bridging the gap between NFTs and the traditional art world.",
+          "Exploring how NFT could expand the definition of what we call art"
+        ]
+      },
+      {
+        "subcluster": "nft:1",
+        "size": 113,
+        "share_of_theme": 0.102,
+        "keywords": [
+          "minting",
+          "travel",
+          "minthunt",
+          "mint",
+          "mints",
+          "mint polygon",
+          "minter",
+          "canva",
+          "travelers",
+          "meditation"
+        ],
+        "representative_descriptions": [
+          "A one-stop shop for creators and fans to mint new NFT collections and add exclusive content for their NFT holders.",
+          "NFTHackST is an NFT factory for minting recording artist community social tokens",
+          "MintFolio is a one-stop Dapp for all your NFT needs, Whether you are a dev, artist or a new collector. Our Dapp allows you to mint, burn, check rarity, sell, list, generate ... NFTs. Fork and launch your new NFT collection/project in minutes!",
+          "Simple NFT minter",
+          "Marketplace to Mint your Ideas and any Digital resources as NFT",
+          "A project  for creators to mint and print NFTs paired with real-world merchandise."
+        ]
+      }
+    ]
+  },
+  "Crypto payments, wallets & off-ramps": {
+    "theme_id": 6,
+    "size": 779,
+    "sub_k": 4,
+    "subclusters": [
+      {
+        "subcluster": "pay:2",
+        "size": 222,
+        "share_of_theme": 0.285,
+        "keywords": [
+          "paypal",
+          "payroll",
+          "nfc",
+          "pyusd",
+          "fee",
+          "stablecoin",
+          "peer",
+          "global",
+          "collateral",
+          "superfluid"
+        ],
+        "representative_descriptions": [
+          "A universal payment layer: BTC security, PYUSD speed, ZK identity & seamless off-ramps.",
+          "Decentralized subscription payments using PayPal PYUSD with direct debit & treasury support.",
+          "Pay-as-you-Go subscription protocol for Web3 using PYUSD. Transparent & flexible payment experience",
+          "ZapPay — the PayPal for AI Agents, enabling safe, refundable, and autonomous stablecoin payments.",
+          "The easiest way to pay non Web3 people across chains — secure, seamless, multichain.",
+          "Pay with crypto on any site. PYUSD → escrow → virtual card. Simple & secure."
+        ]
+      },
+      {
+        "subcluster": "pay:0",
+        "size": 212,
+        "share_of_theme": 0.272,
+        "keywords": [
+          "wallet",
+          "hardware wallet",
+          "view",
+          "xmtp",
+          "spend",
+          "smart wallet",
+          "hardware",
+          "wallets",
+          "mobile wallet",
+          "social recovery"
+        ],
+        "representative_descriptions": [
+          "A mobile privacy wallet for Ethereum.",
+          "Privacy-first wallet for confidential, compliant, and cryptographically secure transactions.",
+          "An easy to use platform for non-technical users to track and visualise there wallet data.",
+          "A beginner-friendly MOBILE web app crypto wallet wrapper with insights, risk tools, and token swaps.",
+          "Voice-controlled Ethereum wallet. Speak naturally to check balance and send transactions.",
+          "A mobile app with cryptocurrency wallet functionality. It allows you to import your wallet or create a new one, check the balance of tokens or NFTs, and send them."
+        ]
+      },
+      {
+        "subcluster": "pay:1",
+        "size": 192,
+        "share_of_theme": 0.246,
+        "keywords": [
+          "stamps",
+          "food stamps",
+          "achievements",
+          "news",
+          "billion",
+          "women",
+          "processing",
+          "pays",
+          "meme",
+          "onramp"
+        ],
+        "representative_descriptions": [
+          "Settel: One-click crypto payments via email. No wallets, no fees, no complexity.",
+          "Send or receive crypto across chains with a simple link — tips, payments, and donations made easy.",
+          "A subscription social platform for sharing private content for crypto. Works on Polygon Blockchain",
+          "Crypto assistant that collects user data, customizes interactions & match-making crypto enthusiasts.",
+          "Creating a first proof of concept of our user-owned, offline-first, encrypted by default subscription based crowdsourcing and crowdfunding marketplace, build on textile threads DB, IPFS and the CIRCLES universal basic income currency protocol",
+          "Easily send, receive or stream crypto dollars using Mainstream Crypto"
+        ]
+      },
+      {
+        "subcluster": "pay:3",
+        "size": 153,
+        "share_of_theme": 0.196,
+        "keywords": [
+          "carbon",
+          "staking",
+          "saving",
+          "iot",
+          "asi",
+          "plain english",
+          "english",
+          "block",
+          "prevent",
+          "carbon credit"
+        ],
+        "representative_descriptions": [
+          "This is a blockchain based application that provides banking services to users. Users can deposit, transfer, withdraw, borrow and swap digital currencies. It also provides functionality for decentralized organizational management.",
+          "ChainMate: Your AI-powered crypto companion that makes digital finance feel natural. Send, receive, and manage crypto through simple conversations - as easy as chatting with a friend. Built on Flow blockchain for security you can trust.",
+          "A blockchain app for backing up, organizing, and anchoring your digital memories on-chain forever.",
+          "A decentralized multichain peer-to-peer platform that provides users ability to easily exchange fiat to cryptocurrency",
+          "Onchain job platform with Self Protocol-based compliance checks and escrowed smart contract rewards.",
+          "Ask blockchain questions in plain English. Powered by Envio, Gemini AI & Blockscout API."
+        ]
+      }
+    ]
+  }
+}
