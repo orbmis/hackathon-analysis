@@ -228,6 +228,53 @@ Headlines:
 
 ---
 
+## 7. Why AI agents over-perform — decomposing the 1.19× lift
+
+The agent advantage is real but **not** broad organic quality. Decomposed three ways
+(`agent_deepdive.py`), it resolves into two coupled artifacts: a dedicated prize-rich
+hackathon and a single mega-sponsor.
+
+**By sub-type — broad, with one exception.** Sub-clustering the 781 agent projects gives
+six sub-types; almost all over-perform, so no single niche carries the lift:
+
+| Agent sub-type | n | Win % | Era-adj. lift |
+|----------------|--:|------:|:-------------:|
+| Agent swarms, marketplaces & business-ops | 142 | 45.1 | **1.30×** |
+| On-chain copilots, auditing & security | 121 | 43.0 | 1.22× |
+| Trading / portfolio / hedge-fund agents | 115 | 42.6 | 1.20× |
+| Consumer & creator agents (NPCs, art, fitness) | 189 | 42.3 | 1.19× |
+| Agent marketplaces w/ payments, TEE, inference | 138 | 34.8 | 1.13× |
+| Telegram / Discord trading bots | 76 | 35.5 | **1.00×** |
+
+The only sub-type with *no* edge is plain **chat bots** (Telegram/Discord) — a commoditized
+wrapper that judges don't reward. "Infrastructure-flavoured" agents (swarms, copilots) win most.
+
+**By sponsor — this is the real engine.** Agent projects won 380 sponsor-prizes, but they
+are extraordinarily concentrated:
+
+- **Coinbase Developer Platform alone = 47.6%** of all agent prizes (181 of 380); top-5
+  sponsors = 63.7%.
+- For comparison, the **corpus's most-concentrated sponsor is just 8.4%** (Polygon). Agent
+  prizes are ~6× more single-sponsor-dependent than the average theme.
+- CDP (AgentKit) effectively *bankrolled the category*. The lift is, to a first
+  approximation, a Coinbase-funded phenomenon.
+
+**By event — it lives in one hackathon.** The over-performance is overwhelmingly inside
+**Agentic Ethereum** (a dedicated, prize-rich agent hackathon): 307 agent projects, 61.6%
+win-rate vs a 43.2% cohort baseline (**1.43×**). Strip that event out and in ordinary recent
+general events agents actually *under*-perform — **ETHOnline 2025 (0.54×)** and **New Delhi
+(0.43×)** — because by then the category was crowded and the earmarked money was gone.
+(A few later events still show residual agent demand — Buenos Aires 1.68×, NY 1.51× — but on
+small, noisy samples.)
+
+**Conclusion.** "Agents win" really means *"agents won where and when the money was earmarked
+for them"* — a themed track (Agentic Ethereum) plus a mega-sponsor (Coinbase). The sharpened
+builder takeaway: **follow earmarked sponsor capital, not the buzzword.** By the time a hot
+category reaches general events, its edge has already been competed away (exactly what
+happened to agents at ETHOnline 2025 / New Delhi, and to Fusion+ swaps in §6).
+
+---
+
 ## Methodology & reproducibility
 
 - **Pipeline:** `analyze_descriptions.py` — load → chronology/time-buckets → NLP tables
@@ -239,6 +286,8 @@ Headlines:
   column. Sub-theme names live in `subtheme_labels.json` (edit + re-run to relabel).
 - **Prizes (§6):** computed from the `prizes` / `prize_count` columns, era-adjusted against
   per-`time_bucket` baselines.
+- **Agent deep-dive (§7):** `agent_deepdive.py` — sub-clusters the agent theme and decomposes
+  its prize lift by sub-type, sponsor, and event; writes `agent_subclusters.json`.
 - **Outputs:** `cluster_summaries.json` (per-cluster keywords + representatives),
   `analysis_stats.json` (trends, n-grams, chronology), `subcluster_summaries.json`, and
   **`ethglobal_projects_enriched.csv`** — every project tagged with `theme_label`,
@@ -254,4 +303,6 @@ Headlines:
 - Scrape real event dates to replace the `id` proxy and get a true timeline.
 - ~~Split the two largest themes at higher k for finer sub-themes~~ — done (§5).
 - ~~Cross-tabulate `theme_label` against `prizes`~~ — done (§6).
-- Drill into the AI-agent over-performance: which sub-types and sponsors drive the 1.19× lift?
+- ~~Drill into the AI-agent over-performance~~ — done (§7): it's Coinbase + Agentic Ethereum.
+- Generalize §7: profile each major sponsor's "earmarked" theme and measure how fast each
+  category's edge decays once it hits general events.
