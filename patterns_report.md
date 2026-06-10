@@ -275,6 +275,94 @@ happened to agents at ETHOnline 2025 / New Delhi, and to Fusion+ swaps in §6).
 
 ---
 
+## 8. The sponsor-alpha model — generalizing §7
+
+§7 showed the agent edge was really *Coinbase money in a themed hackathon*. Does that
+pattern generalize? Yes — into a three-part model (`sponsor_alpha.py`) that turns "where's
+the prize alpha" into something measurable. It also **refutes** the naive version of the
+idea (being in a themed event is *not* automatically an edge).
+
+### A. Earmark score — which sponsors concentrate on one category
+
+For each sponsor, how over-represented is their favourite theme vs that theme's share of all
+corpus prizes (lift, not raw %). Specialists separate cleanly from generalists:
+
+| Sponsor | Prizes | Earmark lift | Earmarked category |
+|---------|-------:|:------------:|--------------------|
+| **1inch** | 100 | **23.6×** | Cross-chain swaps (Fusion+) |
+| **Coinbase Developer Platform** | 288 | **7.5×** | AI agents |
+| **Uniswap Foundation** | 53 | **5.9×** | DeFi lending/perps |
+| **Unlock Protocol** | 48 | **5.1×** | DAO tooling |
+| **Lens Protocol** | 95 | **4.4×** | Creator & social tokens |
+| Livepeer / Ceramic / Tableland | 48–109 | 2.6–4.0× | Storage & media |
+| Covalent / Galadriel | 208 / 276 | 2.3 / 2.7× | NFTs |
+| *Polygon* | 393 | *1.6×* | *(generalist)* |
+| *Filecoin* | 294 | *1.6×* | *(generalist)* |
+| *Optimism* | 159 | *1.1×* | *(generalist)* |
+
+The biggest sponsors by volume (Polygon, Filecoin, Optimism, Chainlink) are **generalists**
+— their prizes spread across the whole corpus, so they confer no category edge. Category
+alpha comes from the **specialists** (lift ≥ ~3×): 1inch, Coinbase, Uniswap Foundation,
+Unlock, Lens.
+
+### B. The alpha window opens at a themed event — then saturates shut
+
+Being in a category's *dedicated* hackathon is an edge only while the category is still
+novel. Era-adjusted win-lift for the target theme **inside** its themed event vs **outside**:
+
+| Themed event → category | n | In-event lift | Elsewhere | Premium |
+|-------------------------|--:|:-------------:|:---------:|:-------:|
+| HackFS 2021 → storage | 31 | **3.30×** | 0.90× | **+2.40** |
+| Agentic Ethereum → AI agents | 307 | **1.43×** | 0.96× | **+0.47** |
+| Trifecta-ZK → ZK/identity | 20 | 1.04× | 1.05× | ≈0 |
+| NFTHack 2022 → NFTs | 169 | 0.86× | 1.07× | −0.21 |
+| **Unite Defi → cross-chain swaps** | 217 | **0.43×** | 1.10× | **−0.67** |
+
+Two regimes emerge:
+
+- **Open window (positive alpha):** a hungry specialist sponsor + a *novel* category —
+  storage at the first HackFS (+2.40), agents at Agentic Ethereum (+0.47). Here the themed
+  event is a genuine edge.
+- **Saturation trap (negative alpha):** the same setup but a *low-differentiation* task.
+  At **Unite Defi**, 1inch's bounty drew 217 near-identical Fusion+ swap clones competing
+  for ~36 prizes, so win-lift *inside* the themed event collapsed to **0.43×** — worse than
+  building cross-chain anywhere else. Earmarked money does not help when everyone ships the
+  same thing.
+
+*(Old themed events — NFTHack, HackMoney — show a spurious 0.00× because the explorer holds
+no prize records for them; a data-completeness gap, not real zeros. Excluded from the read.)*
+
+### C. Decay — the edge reverts once a category goes mainstream
+
+Era-adjusted win-lift by time bucket traces the life-cycle. AI agents are the cleanest:
+
+```
+AI agents:        b1 0.65   →   b4 1.37 (Agentic Ethereum)   →   b5 0.94   →   b6 0.85
+cross-chain swaps:           b3 1.26   b4 1.26   →  b5 0.46 (Unite Defi saturation)  b6 1.14
+```
+
+Agents peak at their themed moment (1.37×) and revert below 1.0× as they become a default
+option at general events (ETHOnline 2025 0.54×, New Delhi 0.43× from §7). Cross-chain craters
+exactly in the over-subscribed Unite Defi bucket.
+
+### The playbook
+
+1. **Target a specialist sponsor** (earmark lift ≥ ~3×), not a generalist — that's where
+   category-specific prize money concentrates.
+2. **Enter at the category's first themed event, while it's still novel** (storage @ early
+   HackFS, agents @ Agentic Ethereum) — the alpha window is widest before the crowd arrives.
+3. **Avoid the saturation trap:** a themed event for a *cloneable, low-differentiation* task
+   (one-SDK cross-chain swaps) is *negative* alpha — earmarked money, but undifferentiated
+   supply. Differentiation matters more than the bounty.
+4. **Assume the edge decays.** By the time a category is a default at general events, its
+   lift has reverted to ≤ 1.0×. Alpha is a window, not a level.
+
+> Caveats: earmark lift is noisy for small themes (mitigated with a ≥15%-share / ≥8-prize
+> floor); themed-event premiums for pre-2023 events are unusable due to missing prize data;
+> decay cells use small per-bucket samples. Treat magnitudes as directional.
+
+---
+
 ## Methodology & reproducibility
 
 - **Pipeline:** `analyze_descriptions.py` — load → chronology/time-buckets → NLP tables
@@ -288,6 +376,8 @@ happened to agents at ETHOnline 2025 / New Delhi, and to Fusion+ swaps in §6).
   per-`time_bucket` baselines.
 - **Agent deep-dive (§7):** `agent_deepdive.py` — sub-clusters the agent theme and decomposes
   its prize lift by sub-type, sponsor, and event; writes `agent_subclusters.json`.
+- **Sponsor-alpha model (§8):** `sponsor_alpha.py` — earmark scores, themed-event premium,
+  and decay curves; writes `sponsor_alpha.json`.
 - **Outputs:** `cluster_summaries.json` (per-cluster keywords + representatives),
   `analysis_stats.json` (trends, n-grams, chronology), `subcluster_summaries.json`, and
   **`ethglobal_projects_enriched.csv`** — every project tagged with `theme_label`,
@@ -304,5 +394,5 @@ happened to agents at ETHOnline 2025 / New Delhi, and to Fusion+ swaps in §6).
 - ~~Split the two largest themes at higher k for finer sub-themes~~ — done (§5).
 - ~~Cross-tabulate `theme_label` against `prizes`~~ — done (§6).
 - ~~Drill into the AI-agent over-performance~~ — done (§7): it's Coinbase + Agentic Ethereum.
-- Generalize §7: profile each major sponsor's "earmarked" theme and measure how fast each
-  category's edge decays once it hits general events.
+- ~~Generalize §7 into a sponsor-alpha model~~ — done (§8): specialists + novelty window − saturation.
+- Scrape real event dates + sponsor prize pools to turn the alpha window into a live, forward-looking signal.
