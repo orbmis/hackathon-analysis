@@ -1,0 +1,55 @@
+event,slug,start_date,end_date,total_pool_usd,n_sponsors,status
+ETHGlobal,newyork2026,2026-06-12,2026-06-14,0,0,upcoming
+ETHGlobal,lisbon2026,2026-07-24,2026-07-26,0,0,upcoming
+ETHGlobal,ethonline2026,2026-09-04,2026-09-16,0,0,upcoming
+ETHGlobal,tokyo2026,2026-09-25,2026-09-27,0,0,upcoming
+ETHGlobal,mumbai,2026-11-06,2026-11-08,0,0,upcoming
+Open Agents,openagents,2026-05-06,2026-05-06,35000,5,past
+ETHGlobal Cannes 2026,cannes2026,2026-04-03,2026-04-05,127000,12,past
+HackMoney 2026,hackmoney2026,2026-02-11,2026-02-11,56000,6,past
+ETHGlobal Buenos Aires,buenosaires,2025-11-21,2025-11-23,484000,46,past
+ETHOnline 2025,ethonline2025,2025-10-10,2025-10-31,82000,13,past
+ETHGlobal New Delhi,newdelhi,2025-09-26,2025-09-28,189000,21,past
+ETHGlobal New York 2025,newyork2025,2025-08-15,2025-08-17,260499,27,past
+Unite Defi,unite,2025-08-08,2025-08-08,526000,4,past
+ETHGlobal Cannes 2026,cannes,2026-04-03,2026-04-05,127000,12,past
+ETHGlobal Prague,prague,2025-06-01,2025-06-01,140001,14,past
+ETHGlobal Taipei,taipei,2025-04-04,2025-04-06,174000,18,past
+ETHGlobal Trifecta,trifecta,2025-03-20,2025-03-26,77500,15,past
+Agentic Ethereum,agents,2025-02-14,2025-02-14,153000,18,past
+ETHGlobal Bangkok,bangkok,2024-11-15,2024-11-17,741500,69,past
+ETHGlobal San Francisco,sanfrancisco2024,2024-10-18,2024-10-20,355400,37,past
+ETHGlobal Singapore,singapore2024,2024-09-20,2024-09-22,301750,31,past
+ETHOnline 2024,ethonline2024,2024-09-13,2024-09-13,188350,23,past
+Superhack 2024,superhack2024,2024-08-02,2024-08-16,174500,18,past
+ETHGlobal Brussels,brussels,2024-07-12,2024-07-14,460713,44,past
+StarkHack,starkhack,2024-06-13,2024-06-26,118000,9,past
+HackFS 2024,hackfs2024,2024-06-07,2024-06-07,133000,16,past
+ETHGlobal Sydney,sydney,2024-05-03,2024-05-05,76500,11,past
+Scaling Ethereum 2024,scaling2024,2024-04-05,2024-04-26,99500,12,past
+Frameworks,frameworks,2024-03-22,2024-03-24,62670,13,past
+ETHGlobal London,london2024,2024-03-15,2024-03-17,251000,26,past
+Aggregation Day,aggregation-day,2024-02-23,2024-02-23,0,0,past
+Circuit Breaker,circuitbreaker,2024-02-02,2024-02-21,35000,6,past
+LFGHO,lfgho,2024-01-12,2024-01-24,60000,3,past
+Censorship.wtf Istanbul,censorship-wtf-istanbul,2023-11-18,2023-11-18,0,0,past
+ETHGlobal Istanbul,istanbul,2023-11-17,2023-11-19,562902,50,past
+Cafe Istanbul,cafe-istanbul,2023-11-16,2023-11-16,0,0,past
+ETHOnline 2023,ethonline2023,2023-10-06,2023-10-27,194000,24,past
+ETHGlobal New York,newyork2023,2023-09-22,2023-09-24,468500,45,past
+Cafe New York,cafe-newyork,2023-09-21,2023-09-21,0,0,past
+Superhack,superhack,2023-08-04,2023-08-18,144000,12,past
+ETHGlobal Paris,paris2023,2023-07-21,2023-07-23,434000,38,past
+Cafe Paris,cafe-paris,2023-07-20,2023-07-20,0,0,past
+ETHGlobal Waterloo,waterloo2023,2023-06-23,2023-06-25,205000,25,past
+Cafe Waterloo,cafe-waterloo,2023-06-22,2023-06-22,0,0,past
+HackFS 2023,hackfs2023,2023-06-02,2023-06-21,133500,25,past
+Autonomous Worlds,autonomous,2023-05-18,2023-05-26,25000,4,past
+ETHGlobal Lisbon,lisbon,2023-05-12,2023-05-14,259500,24,past
+Cafe Lisbon,cafe-lisbon,2023-05-11,2023-05-11,0,0,past
+ETHGlobal Tokyo,tokyo,2023-04-14,2023-04-16,354500,36,past
+Cafe Tokyo,cafe-tokyo,2023-04-13,2023-04-13,0,0,past
+Polygon ZK Day 2.0,polygon-zk-summit,2023-03-27,2023-03-27,0,0,past
+mevconomics.wtf,mevconomics-wtf,2023-03-24,2023-03-24,0,0,past
+Scaling Ethereum 2023,scaling2023,2023-03-10,2023-03-31,172000,17,past
+FVM Space Warp,spacewarp,2023-02-10,2023-02-10,40500,6,past

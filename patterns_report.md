@@ -363,6 +363,84 @@ exactly in the over-subscribed Unite Defi bucket.
 
 ---
 
+## 9. Forward-looking forecast — where's the alpha at upcoming hackathons?
+
+§1–§8 are backward-looking. This turns the model into a **forward signal** for the next
+ETHGlobal events, by scraping real event data from `ethglobal.com`
+(`scrape_events.py` → `event_meta.csv`, `event_sponsors.csv`; 49 past events, 835 sponsor
+prize lines with dollar amounts).
+
+**The pivot:** upcoming event pages don't publish sponsors or pools yet (they HTTP-500). So the
+forecast can't *read* the lineup — it **predicts** it. ETHGlobal sponsors recur heavily, so a
+recency-weighted model over the last 8 general events gives P(sponsor present at the next one).
+
+### Predicted sponsor lineup (recurrence, last-8-events weighted)
+
+| Sponsor | P(present) | Avg $ | Role |
+|---------|:----------:|------:|------|
+| ENS | 0.81 | $9.7K | generalist |
+| **Uniswap Foundation** | 0.81 | $14.2K | **specialist → DeFi lending** |
+| The Graph / Hedera / Polygon / World | 0.6–0.75 | $9–18K | generalists |
+| **Coinbase Developer Platform** | 0.67 | $15.4K | **specialist → AI agents** |
+| **1inch** | 0.61 | $19.5K | **specialist → cross-chain swaps** |
+
+Only three of the strong **specialist** sponsors from §8 are likely present at a general 2026
+event — Uniswap Foundation, Coinbase, and 1inch. Everything else recurring is a generalist
+(money spread across the corpus → no category edge).
+
+### Category alpha index for the upcoming general events
+
+Operationalizing the §8 playbook: `alpha ∝ expected earmarked $ × win-conversion health`,
+where health rewards categories that historically convert sponsor $ into wins (recent win-lift
++ momentum) and **damps demonstrated traps** (using §8's themed-event premium) and crowded ones.
+
+| Category | Index | Exp. $ | Supply | Momentum | Verdict |
+|----------|:-----:|-------:|:------:|:--------:|---------|
+| DeFi lending, perps & collateral | 100 | $11.4K | 13.2% | +0.43 | **CROWDED** — best $ + momentum, but saturated |
+| On-chain trading / dev infra | 30 | $4.1K | 11.6% | +0.32 | Thin — weak specialist $ |
+| Cross-chain swaps (1inch) | 22 | $11.9K | 1.5% | −0.12 | **TRAP** — re-saturates under its own bounty (§8) |
+| AI agents | 18 | $10.3K | 14.5% | −0.52 | **COOLING** — the 2025 window has closed |
+| *(10 other categories)* | 0 | $0 | — | — | **No specialist $** — no sponsor edge |
+
+### The call: the easy windows have closed
+
+There is **no wide-open alpha window** at the mid-2026 general events:
+
+- **AI agents — closed.** The §7 edge has decayed exactly as the model predicts a window should:
+  momentum −0.52, win-lift reverted to ≤1× at general events. Coinbase money still shows up, but
+  the category is now the most crowded (14.5% of recent builds). Late to the trade.
+- **Cross-chain — still a trap.** 1inch will likely bring a Fusion+ bounty again; its low *idle*
+  supply (1.5%) is a mirage — supply re-explodes into clones the moment the bounty appears
+  (§8: in-event win-lift 0.43×). Avoid.
+- **DeFi lending — the least-bad bet.** Uniswap Foundation money + the only strongly positive
+  momentum (+0.43), but already crowded (13.2%). Winnable only with real differentiation.
+- **Everything else — sponsor-alpha desert.** 10 of 14 categories have no specialist backing;
+  build there for conviction, not prizes.
+
+**The real leading indicator** is the *creation* of a new window: a specialist sponsor entering
+a fresh, uncrowded category — exactly what Coinbase did for agents in early 2025. That, not any
+current category, is where the next 1.4× lives. (A signal to watch: a May-2026 "Open Agents"
+event shows sponsors still earmarking agents — but whether builders still *win* there depends on
+saturation our project data, which ends Nov 2025, can't yet measure.)
+
+### Per upcoming event
+
+| Date | Event | Predicted headline specialists | Watch-list categories |
+|------|-------|--------------------------------|-----------------------|
+| 2026-06-12 | ETHGlobal New York 2026 | Uniswap, Coinbase, 1inch | DeFi lending (differentiate); avoid cross-chain |
+| 2026-07-24 | ETHGlobal Lisbon 2026 | Uniswap, Coinbase, 1inch | same |
+| 2026-09-04 | ETHOnline 2026 | Uniswap, Coinbase, 1inch | same |
+| 2026-09-25 | ETHGlobal Tokyo 2026 | Uniswap, Coinbase, 1inch | same |
+| 2026-11-06 | ETHGlobal Mumbai | Uniswap, Coinbase, 1inch | same |
+
+> **Caveats — this is a projection, not a guarantee.** (1) Upcoming sponsors are *predicted from
+> recurrence, not announced*. (2) **~7-month staleness**: sponsor data runs to May 2026 but the
+> project supply/momentum signals end at Buenos Aires (Nov 2025) — category dynamics may have
+> moved. (3) Momentum uses the `id`-bucket time proxy. (4) `$` are gross sponsor pools, not
+> per-project expected value. (5) Anchored at today = 2026-06-10.
+
+---
+
 ## Methodology & reproducibility
 
 - **Pipeline:** `analyze_descriptions.py` — load → chronology/time-buckets → NLP tables
@@ -378,6 +456,10 @@ exactly in the over-subscribed Unite Defi bucket.
   its prize lift by sub-type, sponsor, and event; writes `agent_subclusters.json`.
 - **Sponsor-alpha model (§8):** `sponsor_alpha.py` — earmark scores, themed-event premium,
   and decay curves; writes `sponsor_alpha.json`.
+- **Forward forecast (§9):** `scrape_events.py` rate-limited scrape of `ethglobal.com` →
+  `event_meta.csv` / `event_sponsors.csv` (real dates + per-sponsor $ pools); `forecast_alpha.py`
+  builds a recency-weighted sponsor-recurrence model and a category alpha index →
+  `sponsor_recurrence.csv`, `alpha_forecast.csv`, `alpha_forecast.json`.
 - **Outputs:** `cluster_summaries.json` (per-cluster keywords + representatives),
   `analysis_stats.json` (trends, n-grams, chronology), `subcluster_summaries.json`, and
   **`ethglobal_projects_enriched.csv`** — every project tagged with `theme_label`,
@@ -395,4 +477,6 @@ exactly in the over-subscribed Unite Defi bucket.
 - ~~Cross-tabulate `theme_label` against `prizes`~~ — done (§6).
 - ~~Drill into the AI-agent over-performance~~ — done (§7): it's Coinbase + Agentic Ethereum.
 - ~~Generalize §7 into a sponsor-alpha model~~ — done (§8): specialists + novelty window − saturation.
-- Scrape real event dates + sponsor prize pools to turn the alpha window into a live, forward-looking signal.
+- ~~Scrape real event dates + sponsor prize pools for a forward-looking signal~~ — done (§9).
+- Re-pull project data through mid-2026 to close the ~7-month staleness gap and validate the forecast
+  against actual NY-2026 outcomes once available.
