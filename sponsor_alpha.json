@@ -1,0 +1,352 @@
+{
+  "earmark": [
+    {
+      "sponsor": "1inch",
+      "prizes": 100,
+      "earmark_theme": "Cross-chain atomic swaps (1inch Fusion+)",
+      "earmark_share": 0.36,
+      "earmark_lift": 23.57
+    },
+    {
+      "sponsor": "Coinbase Developer Platform",
+      "prizes": 288,
+      "earmark_theme": "AI agents & autonomous assistants",
+      "earmark_share": 0.628,
+      "earmark_lift": 7.47
+    },
+    {
+      "sponsor": "Uniswap Foundation",
+      "prizes": 53,
+      "earmark_theme": "DeFi lending, perps & collateral",
+      "earmark_share": 0.396,
+      "earmark_lift": 5.87
+    },
+    {
+      "sponsor": "Unlock Protocol",
+      "prizes": 48,
+      "earmark_theme": "DAO tooling & governance",
+      "earmark_share": 0.229,
+      "earmark_lift": 5.08
+    },
+    {
+      "sponsor": "Lens Protocol",
+      "prizes": 95,
+      "earmark_theme": "Creator & social-token platforms",
+      "earmark_share": 0.379,
+      "earmark_lift": 4.39
+    },
+    {
+      "sponsor": "Ceramic",
+      "prizes": 48,
+      "earmark_theme": "Decentralized storage & content sharing",
+      "earmark_share": 0.271,
+      "earmark_lift": 4.04
+    },
+    {
+      "sponsor": "EVVM",
+      "prizes": 41,
+      "earmark_theme": "On-chain trading tools & dev infrastructure",
+      "earmark_share": 0.244,
+      "earmark_lift": 3.81
+    },
+    {
+      "sponsor": "Valist",
+      "prizes": 97,
+      "earmark_theme": "On-chain gaming & play-to-earn",
+      "earmark_share": 0.165,
+      "earmark_lift": 3.21
+    },
+    {
+      "sponsor": "Livepeer",
+      "prizes": 72,
+      "earmark_theme": "Decentralized storage & content sharing",
+      "earmark_share": 0.208,
+      "earmark_lift": 3.11
+    },
+    {
+      "sponsor": "Coinbase Cloud",
+      "prizes": 32,
+      "earmark_theme": "ZK identity, privacy & verifiable reputation",
+      "earmark_share": 0.188,
+      "earmark_lift": 2.89
+    },
+    {
+      "sponsor": "Celo",
+      "prizes": 56,
+      "earmark_theme": "ZK identity, privacy & verifiable reputation",
+      "earmark_share": 0.179,
+      "earmark_lift": 2.75
+    },
+    {
+      "sponsor": "Galadriel",
+      "prizes": 276,
+      "earmark_theme": "NFTs, collectibles & creator marketplaces",
+      "earmark_share": 0.471,
+      "earmark_lift": 2.74
+    },
+    {
+      "sponsor": "Push Protocol",
+      "prizes": 38,
+      "earmark_theme": "Creator & social-token platforms",
+      "earmark_share": 0.237,
+      "earmark_lift": 2.74
+    },
+    {
+      "sponsor": "Hedera",
+      "prizes": 31,
+      "earmark_theme": "AI agents & autonomous assistants",
+      "earmark_share": 0.226,
+      "earmark_lift": 2.68
+    },
+    {
+      "sponsor": "Superfluid",
+      "prizes": 177,
+      "earmark_theme": "Crowdfunding, donations & creator monetization",
+      "earmark_share": 0.226,
+      "earmark_lift": 2.67
+    },
+    {
+      "sponsor": "WalletConnect",
+      "prizes": 42,
+      "earmark_theme": "Crypto payments, wallets & off-ramps",
+      "earmark_share": 0.214,
+      "earmark_lift": 2.61
+    },
+    {
+      "sponsor": "Tableland",
+      "prizes": 109,
+      "earmark_theme": "Decentralized storage & content sharing",
+      "earmark_share": 0.174,
+      "earmark_lift": 2.6
+    },
+    {
+      "sponsor": "Flow",
+      "prizes": 95,
+      "earmark_theme": "AI agents & autonomous assistants",
+      "earmark_share": 0.2,
+      "earmark_lift": 2.38
+    },
+    {
+      "sponsor": "Covalent",
+      "prizes": 208,
+      "earmark_theme": "NFTs, collectibles & creator marketplaces",
+      "earmark_share": 0.399,
+      "earmark_lift": 2.32
+    },
+    {
+      "sponsor": "XMTP",
+      "prizes": 105,
+      "earmark_theme": "Web3 social networks & web2 bridges",
+      "earmark_share": 0.19,
+      "earmark_lift": 2.16
+    },
+    {
+      "sponsor": "Worldcoin",
+      "prizes": 229,
+      "earmark_theme": "Creator & social-token platforms",
+      "earmark_share": 0.183,
+      "earmark_lift": 2.12
+    },
+    {
+      "sponsor": "Blockscout",
+      "prizes": 95,
+      "earmark_theme": "Crypto payments, wallets & off-ramps",
+      "earmark_share": 0.158,
+      "earmark_lift": 1.92
+    },
+    {
+      "sponsor": "ENS",
+      "prizes": 105,
+      "earmark_theme": "Crypto payments, wallets & off-ramps",
+      "earmark_share": 0.152,
+      "earmark_lift": 1.86
+    },
+    {
+      "sponsor": "The Graph",
+      "prizes": 77,
+      "earmark_theme": "Decentralized storage & content sharing",
+      "earmark_share": 0.117,
+      "earmark_lift": 1.74
+    },
+    {
+      "sponsor": "Polygon",
+      "prizes": 393,
+      "earmark_theme": "NFTs, collectibles & creator marketplaces",
+      "earmark_share": 0.28,
+      "earmark_lift": 1.63
+    },
+    {
+      "sponsor": "Filecoin",
+      "prizes": 294,
+      "earmark_theme": "NFTs, collectibles & creator marketplaces",
+      "earmark_share": 0.279,
+      "earmark_lift": 1.62
+    },
+    {
+      "sponsor": "Chainlink",
+      "prizes": 94,
+      "earmark_theme": "NFTs, collectibles & creator marketplaces",
+      "earmark_share": 0.245,
+      "earmark_lift": 1.42
+    },
+    {
+      "sponsor": "SKALE Network",
+      "prizes": 73,
+      "earmark_theme": "NFTs, collectibles & creator marketplaces",
+      "earmark_share": 0.219,
+      "earmark_lift": 1.27
+    },
+    {
+      "sponsor": "Optimism",
+      "prizes": 159,
+      "earmark_theme": "NFTs, collectibles & creator marketplaces",
+      "earmark_share": 0.182,
+      "earmark_lift": 1.06
+    }
+  ],
+  "themed_premium": [
+    {
+      "theme": "AI agents & autonomous assistants",
+      "event": "Agentic Ethereum",
+      "n": 307,
+      "in_lift": 1.43,
+      "out_lift": 0.96
+    },
+    {
+      "theme": "AI agents & autonomous assistants",
+      "event": "ETHGlobal Trifecta - Agents",
+      "n": 26,
+      "in_lift": 0.8,
+      "out_lift": 1.2
+    },
+    {
+      "theme": "Cross-chain atomic swaps (1inch Fusion+)",
+      "event": "Unite Defi",
+      "n": 217,
+      "in_lift": 0.43,
+      "out_lift": 1.1
+    },
+    {
+      "theme": "DAO tooling & governance",
+      "event": "DAOHacks",
+      "n": 73,
+      "in_lift": 0.86,
+      "out_lift": 1.01
+    },
+    {
+      "theme": "DeFi lending, perps & collateral",
+      "event": "HackMoney 2021",
+      "n": 45,
+      "in_lift": 0.0,
+      "out_lift": 1.02
+    },
+    {
+      "theme": "DeFi lending, perps & collateral",
+      "event": "HackMoney",
+      "n": 24,
+      "in_lift": 0.0,
+      "out_lift": 1.02
+    },
+    {
+      "theme": "Decentralized storage & content sharing",
+      "event": "HackFS 2022",
+      "n": 49,
+      "in_lift": 0.89,
+      "out_lift": 0.99
+    },
+    {
+      "theme": "Decentralized storage & content sharing",
+      "event": "HackFS",
+      "n": 56,
+      "in_lift": 0.0,
+      "out_lift": 1.1
+    },
+    {
+      "theme": "Decentralized storage & content sharing",
+      "event": "HackFS 2021",
+      "n": 31,
+      "in_lift": 3.3,
+      "out_lift": 0.9
+    },
+    {
+      "theme": "Decentralized storage & content sharing",
+      "event": "Hack FEVM",
+      "n": 18,
+      "in_lift": 0.36,
+      "out_lift": 1.01
+    },
+    {
+      "theme": "NFTs, collectibles & creator marketplaces",
+      "event": "NFTHack",
+      "n": 110,
+      "in_lift": 0.0,
+      "out_lift": 1.08
+    },
+    {
+      "theme": "NFTs, collectibles & creator marketplaces",
+      "event": "NFTHack 2022",
+      "n": 169,
+      "in_lift": 0.86,
+      "out_lift": 1.07
+    },
+    {
+      "theme": "ZK identity, privacy & verifiable reputation",
+      "event": "ETHGlobal Trifecta - Zero Knowledge",
+      "n": 20,
+      "in_lift": 1.04,
+      "out_lift": 1.05
+    }
+  ],
+  "decay_by_bucket": {
+    "AI agents & autonomous assistants": {
+      "1": 0.65,
+      "4": 1.37,
+      "5": 0.94,
+      "6": 0.85
+    },
+    "Cross-chain atomic swaps (1inch Fusion+)": {
+      "3": 1.26,
+      "4": 1.26,
+      "5": 0.46,
+      "6": 1.14
+    },
+    "DAO tooling & governance": {
+      "1": 0.84,
+      "2": 0.95,
+      "3": 1.51,
+      "4": 1.25
+    },
+    "DeFi lending, perps & collateral": {
+      "1": 1.0,
+      "2": 0.99,
+      "3": 0.51,
+      "4": 0.93,
+      "5": 1.07,
+      "6": 1.37
+    },
+    "Decentralized storage & content sharing": {
+      "1": 0.98,
+      "2": 1.07,
+      "3": 1.94,
+      "4": 0.28,
+      "5": 1.03,
+      "6": 0.67
+    },
+    "NFTs, collectibles & creator marketplaces": {
+      "1": 1.0,
+      "2": 1.04,
+      "3": 1.15,
+      "4": 0.51,
+      "5": 1.33,
+      "6": 0.2
+    },
+    "ZK identity, privacy & verifiable reputation": {
+      "1": 1.05,
+      "2": 0.91,
+      "3": 0.91,
+      "4": 0.93,
+      "5": 1.32,
+      "6": 1.15
+    }
+  }
+}

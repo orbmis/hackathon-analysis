@@ -1,0 +1,146 @@
+[
+  {
+    "sub": "ag:0",
+    "n": 189,
+    "win_rate": 0.423,
+    "era_adj_lift": 1.19,
+    "keywords": [
+      "characters",
+      "creators",
+      "extension",
+      "fitness",
+      "mint",
+      "art",
+      "health",
+      "companion",
+      "way",
+      "content"
+    ],
+    "reps": [
+      "AI Agent for Unreal Engine! Our plugin powers dynamic NPCs using OpenAI, AgentKit, and Autonom, enabling real-time player interaction, game world control, and enhanced immersion.",
+      "Voice-powered Ethereum wallet & toolkit for building AI agents on Alexa.",
+      "An AI agent that distributes tokens by tracking user interactions.",
+      "Create and personalize an AI assistant tailored to your organization's needs."
+    ]
+  },
+  {
+    "sub": "ag:1",
+    "n": 115,
+    "win_rate": 0.426,
+    "era_adj_lift": 1.2,
+    "keywords": [
+      "arbitrage",
+      "portfolio manager",
+      "market analysis",
+      "hedge fund",
+      "hedge",
+      "traders",
+      "trading",
+      "prediction",
+      "financial",
+      "trades"
+    ],
+    "reps": [
+      "An AI agent that lets you invest in Real-World Assets just by talking to it.",
+      "AI-powered DeFAI trading platform on Base that automates trades using real-time market predictions, advanced pool analytics, and risk management. Trade smarter with AI",
+      "This project is an advanced AI agent that autonomously analyzes real-time market data to dynamically optimize trading strategies.",
+      "An intent-driven AI trading agent platform that simplifies and enhances automated trading"
+    ]
+  },
+  {
+    "sub": "ag:2",
+    "n": 121,
+    "win_rate": 0.43,
+    "era_adj_lift": 1.22,
+    "keywords": [
+      "auditing",
+      "integrated",
+      "contract",
+      "chain",
+      "wallet",
+      "security",
+      "crypto",
+      "driven",
+      "contracts",
+      "informed"
+    ],
+    "reps": [
+      "Your Personal Onchain Copilot. Build your onchain portfolio effortlessly with AI-powered multi-agent insights.",
+      "A revolutionary platform where users bet on AI Agent battles! Watch as artificial minds compete across various challenges and games, proving their capabilities in a transparent, blockchain-verified environment.",
+      "An AI-powered onchain assistant built on Base, enabling seamless token swaps, DeFi interactions, and automated tasks through natural language. It integrates Autonome, Coinbase AgentKit, and Nillion SecretVault for secure, innovative, and user-friendly blockchain experiences. 🚀",
+      "AIxScan: AI-Powered Multichain Blockchain Explorer and Agent Framework 🚀"
+    ]
+  },
+  {
+    "sub": "ag:3",
+    "n": 138,
+    "win_rate": 0.348,
+    "era_adj_lift": 1.13,
+    "keywords": [
+      "pay use",
+      "privacy",
+      "crypto payments",
+      "insurance",
+      "tees",
+      "legal",
+      "inference",
+      "privy",
+      "local",
+      "generating"
+    ],
+    "reps": [
+      "Decentralized AI agent marketplace where developers monetize agents and users rented AI services.",
+      "Decentralized, interoperable AI agent infrastructure showcased on the Agent Store, featuring Universal Web2/Web3-compatible Agent Entiyt.ID, Onchain Reputation/Rating, and Developer Verification/KYC",
+      "A decentralized marketplace where AI agents compete to solve tasks and get paid in crypto",
+      "Decentralized AI Agent Marketplace with secure DataCoin access and monetization."
+    ]
+  },
+  {
+    "sub": "ag:4",
+    "n": 142,
+    "win_rate": 0.451,
+    "era_adj_lift": 1.3,
+    "keywords": [
+      "swarm",
+      "agentnet",
+      "operations",
+      "job",
+      "finding",
+      "onboarding",
+      "business",
+      "search",
+      "building",
+      "automation"
+    ],
+    "reps": [
+      "Cross-chain AI marketplace: Build, deploy & execute autonomous agents with instant bridging.",
+      "Utopian agentverse where AI agents collaborate, earn, and trade via ASI infrastructure.",
+      "Aegis-Defi-Agent: AI-powered DeFi automation for intelligent agents & strategies.",
+      "A multi-agent system for DeFi automation, social interactions, & browser automation. Smart agents execute trades, monitor markets, interact socially, and automate workflows—all powered by AI. The future of Web3 intelligence starts here!"
+    ]
+  },
+  {
+    "sub": "ag:5",
+    "n": 76,
+    "win_rate": 0.355,
+    "era_adj_lift": 1.0,
+    "keywords": [
+      "telegram",
+      "telegram bot",
+      "bot",
+      "trading bots",
+      "bots",
+      "discord bot",
+      "solana",
+      "trading bot",
+      "twitter",
+      "discord"
+    ],
+    "reps": [
+      "AI-powered Telegram bot that provides users with convenient wallet analysis",
+      "ElizaTrade – An AI-powered Telegram trading bot that extracts signals, analyzes risk, and auto-executes trades on CEX & DEX. Powered by Eliza AI, it confirms orders, adjusts stop-losses, and syncs across exchanges for smarter trading!",
+      "a DEFAi agent telegram bot which you can use as wallet and for automated defi activities like lending, borrowing, and LP positions etc, future of payments and investing is here",
+      "TokenPulse is an AI-powered chatbot specifically designed for cryptocurrency token analysis. It combines real-time market data, social sentiment analysis, and blockchain interactions to provide comprehensive insights about crypto tokens."
+    ]
+  }
+]

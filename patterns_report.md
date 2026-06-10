@@ -148,18 +148,242 @@ the next theme might nucleate (much as lone AI experiments did before bucket 4).
 
 ---
 
+## 5. Sub-themes within the two largest clusters
+
+Splitting the two biggest themes at higher resolution (`subcluster_themes.py`, sub-KMeans
+on the same embeddings) reveals their internal structure. Sub-theme labels are in the
+enriched CSV's `subtheme_label` column.
+
+**NFTs, collectibles & creator marketplaces (1,112)** is not one thing — it's six:
+
+| Sub-theme | Projects | Share |
+|-----------|---------:|------:|
+| NFT marketplaces & real-world utility | 262 | 24% |
+| NFT-Fi: lending, collateral & fractionalization | 261 | 23% |
+| Creator media & streaming (NFT memberships) | 207 | 19% |
+| NFT gaming & collectible cards | 145 | 13% |
+| Generative & collaborative art NFTs | 124 | 11% |
+| Minting tools & launchpads | 113 | 10% |
+
+The notable find: ~23% of "NFT" projects are actually **NFT-Fi** (using NFTs as
+financial collateral — lending, renting, fractionalizing), i.e. closer to DeFi than to
+art. Pure art NFTs are only ~11%.
+
+**Crypto payments, wallets & off-ramps (779)** splits cleanly into four:
+
+| Sub-theme | Projects | Share |
+|-----------|---------:|------:|
+| Stablecoin payments, payroll & subscriptions (PYUSD) | 222 | 28% |
+| Wallets (smart / hardware / privacy) | 212 | 27% |
+| P2P transfers, payment links & tipping | 192 | 25% |
+| Neobank, savings & everyday-finance apps | 153 | 20% |
+
+PYUSD (PayPal's stablecoin) is a recurring anchor in the largest sub-theme — another
+case of sponsor gravity shaping what gets built.
+
+---
+
+## 6. Which themes actually win prizes
+
+`prize_count > 0` (project won ≥ 1 sponsor prize) is a win proxy. **Overall win-rate is
+39.7%** — ETHGlobal hands out many sponsor prizes, so winning *something* is common.
+
+**The raw cross-tab is a trap — it's dominated by an era confound.** Win-rate by cohort
+falls from ~61% in the oldest buckets to ~22% in the newest (older events list prizes far
+more completely / had higher prize-to-project ratios). So a naive ranking just surfaces
+*old* themes (NFTs, DAOs, social) as "winners." The honest metric is **era-adjusted lift**:
+a theme's win-rate vs. the baseline of *its own* time cohorts.
+
+| Theme | n | Win % | Era-adj. lift | Read |
+|-------|--:|------:|:-------------:|------|
+| **AI agents & autonomous assistants** | 781 | 41.0 | **1.19×** | Genuinely over-performs |
+| Crowdfunding & creator monetization | 581 | 43.4 | 1.07× | Slight edge |
+| ZK identity, privacy & reputation | 531 | 39.0 | 1.05× | Slight edge |
+| Web3 social & web2 bridges | 477 | 51.2 | 1.04× | ~Average (era-inflated raw) |
+| NFTs & creator marketplaces | 1,112 | 48.7 | 1.03× | ~Average (era-inflated raw) |
+| On-chain gaming | 431 | 38.3 | 1.00× | Average |
+| Crypto payments & wallets | 779 | 35.3 | 0.98× | Average |
+| DeFi lending & perps | 713 | 32.8 | 0.98× | Average |
+| DAO tooling & governance | 281 | 50.9 | 0.97× | ~Average (era-inflated raw) |
+| On-chain trading infra | 684 | 32.6 | 0.93× | Slight drag |
+| **DeFi portfolio & yield automation** | 321 | 27.1 | **0.82×** | Saturated / under-performs |
+| **Cross-chain atomic swaps (1inch)** | 299 | 18.1 | **0.63×** | Heavily under-performs |
+
+Headlines:
+
+- **AI agents are the only clear over-performer (1.19×)** even after era adjustment —
+  driven by concentrated sponsor demand. Coinbase Developer Platform alone accounts for
+  **181 of the prizes** won by agent projects; sponsors actively bought the agent wave.
+- **The NFT/DAO/social "wins" evaporate once era-adjusted** — they were high only because
+  they're old-era themes, when prizes were plentiful. On a level field they're ~average.
+- **Cross-chain swaps are the worst bet (0.63×)** — a textbook saturation story: the
+  1inch-sponsored *Unite Defi* flood meant hundreds of near-identical Fusion+ swap clones
+  chasing a handful of 1inch prizes (36 of them). DeFi yield automation (0.82×) is the
+  next-most-crowded-yet-thin field.
+- **Takeaway for a builder:** novelty with a hungry sponsor (agents) beats piling into a
+  single-sponsor bounty everyone else also targeted (Fusion+ swaps).
+
+> Caveat: era adjustment controls for cohort prize density but not for sponsor mix or
+> the explorer's data completeness; treat lifts as directional, not precise.
+
+---
+
+## 7. Why AI agents over-perform — decomposing the 1.19× lift
+
+The agent advantage is real but **not** broad organic quality. Decomposed three ways
+(`agent_deepdive.py`), it resolves into two coupled artifacts: a dedicated prize-rich
+hackathon and a single mega-sponsor.
+
+**By sub-type — broad, with one exception.** Sub-clustering the 781 agent projects gives
+six sub-types; almost all over-perform, so no single niche carries the lift:
+
+| Agent sub-type | n | Win % | Era-adj. lift |
+|----------------|--:|------:|:-------------:|
+| Agent swarms, marketplaces & business-ops | 142 | 45.1 | **1.30×** |
+| On-chain copilots, auditing & security | 121 | 43.0 | 1.22× |
+| Trading / portfolio / hedge-fund agents | 115 | 42.6 | 1.20× |
+| Consumer & creator agents (NPCs, art, fitness) | 189 | 42.3 | 1.19× |
+| Agent marketplaces w/ payments, TEE, inference | 138 | 34.8 | 1.13× |
+| Telegram / Discord trading bots | 76 | 35.5 | **1.00×** |
+
+The only sub-type with *no* edge is plain **chat bots** (Telegram/Discord) — a commoditized
+wrapper that judges don't reward. "Infrastructure-flavoured" agents (swarms, copilots) win most.
+
+**By sponsor — this is the real engine.** Agent projects won 380 sponsor-prizes, but they
+are extraordinarily concentrated:
+
+- **Coinbase Developer Platform alone = 47.6%** of all agent prizes (181 of 380); top-5
+  sponsors = 63.7%.
+- For comparison, the **corpus's most-concentrated sponsor is just 8.4%** (Polygon). Agent
+  prizes are ~6× more single-sponsor-dependent than the average theme.
+- CDP (AgentKit) effectively *bankrolled the category*. The lift is, to a first
+  approximation, a Coinbase-funded phenomenon.
+
+**By event — it lives in one hackathon.** The over-performance is overwhelmingly inside
+**Agentic Ethereum** (a dedicated, prize-rich agent hackathon): 307 agent projects, 61.6%
+win-rate vs a 43.2% cohort baseline (**1.43×**). Strip that event out and in ordinary recent
+general events agents actually *under*-perform — **ETHOnline 2025 (0.54×)** and **New Delhi
+(0.43×)** — because by then the category was crowded and the earmarked money was gone.
+(A few later events still show residual agent demand — Buenos Aires 1.68×, NY 1.51× — but on
+small, noisy samples.)
+
+**Conclusion.** "Agents win" really means *"agents won where and when the money was earmarked
+for them"* — a themed track (Agentic Ethereum) plus a mega-sponsor (Coinbase). The sharpened
+builder takeaway: **follow earmarked sponsor capital, not the buzzword.** By the time a hot
+category reaches general events, its edge has already been competed away (exactly what
+happened to agents at ETHOnline 2025 / New Delhi, and to Fusion+ swaps in §6).
+
+---
+
+## 8. The sponsor-alpha model — generalizing §7
+
+§7 showed the agent edge was really *Coinbase money in a themed hackathon*. Does that
+pattern generalize? Yes — into a three-part model (`sponsor_alpha.py`) that turns "where's
+the prize alpha" into something measurable. It also **refutes** the naive version of the
+idea (being in a themed event is *not* automatically an edge).
+
+### A. Earmark score — which sponsors concentrate on one category
+
+For each sponsor, how over-represented is their favourite theme vs that theme's share of all
+corpus prizes (lift, not raw %). Specialists separate cleanly from generalists:
+
+| Sponsor | Prizes | Earmark lift | Earmarked category |
+|---------|-------:|:------------:|--------------------|
+| **1inch** | 100 | **23.6×** | Cross-chain swaps (Fusion+) |
+| **Coinbase Developer Platform** | 288 | **7.5×** | AI agents |
+| **Uniswap Foundation** | 53 | **5.9×** | DeFi lending/perps |
+| **Unlock Protocol** | 48 | **5.1×** | DAO tooling |
+| **Lens Protocol** | 95 | **4.4×** | Creator & social tokens |
+| Livepeer / Ceramic / Tableland | 48–109 | 2.6–4.0× | Storage & media |
+| Covalent / Galadriel | 208 / 276 | 2.3 / 2.7× | NFTs |
+| *Polygon* | 393 | *1.6×* | *(generalist)* |
+| *Filecoin* | 294 | *1.6×* | *(generalist)* |
+| *Optimism* | 159 | *1.1×* | *(generalist)* |
+
+The biggest sponsors by volume (Polygon, Filecoin, Optimism, Chainlink) are **generalists**
+— their prizes spread across the whole corpus, so they confer no category edge. Category
+alpha comes from the **specialists** (lift ≥ ~3×): 1inch, Coinbase, Uniswap Foundation,
+Unlock, Lens.
+
+### B. The alpha window opens at a themed event — then saturates shut
+
+Being in a category's *dedicated* hackathon is an edge only while the category is still
+novel. Era-adjusted win-lift for the target theme **inside** its themed event vs **outside**:
+
+| Themed event → category | n | In-event lift | Elsewhere | Premium |
+|-------------------------|--:|:-------------:|:---------:|:-------:|
+| HackFS 2021 → storage | 31 | **3.30×** | 0.90× | **+2.40** |
+| Agentic Ethereum → AI agents | 307 | **1.43×** | 0.96× | **+0.47** |
+| Trifecta-ZK → ZK/identity | 20 | 1.04× | 1.05× | ≈0 |
+| NFTHack 2022 → NFTs | 169 | 0.86× | 1.07× | −0.21 |
+| **Unite Defi → cross-chain swaps** | 217 | **0.43×** | 1.10× | **−0.67** |
+
+Two regimes emerge:
+
+- **Open window (positive alpha):** a hungry specialist sponsor + a *novel* category —
+  storage at the first HackFS (+2.40), agents at Agentic Ethereum (+0.47). Here the themed
+  event is a genuine edge.
+- **Saturation trap (negative alpha):** the same setup but a *low-differentiation* task.
+  At **Unite Defi**, 1inch's bounty drew 217 near-identical Fusion+ swap clones competing
+  for ~36 prizes, so win-lift *inside* the themed event collapsed to **0.43×** — worse than
+  building cross-chain anywhere else. Earmarked money does not help when everyone ships the
+  same thing.
+
+*(Old themed events — NFTHack, HackMoney — show a spurious 0.00× because the explorer holds
+no prize records for them; a data-completeness gap, not real zeros. Excluded from the read.)*
+
+### C. Decay — the edge reverts once a category goes mainstream
+
+Era-adjusted win-lift by time bucket traces the life-cycle. AI agents are the cleanest:
+
+```
+AI agents:        b1 0.65   →   b4 1.37 (Agentic Ethereum)   →   b5 0.94   →   b6 0.85
+cross-chain swaps:           b3 1.26   b4 1.26   →  b5 0.46 (Unite Defi saturation)  b6 1.14
+```
+
+Agents peak at their themed moment (1.37×) and revert below 1.0× as they become a default
+option at general events (ETHOnline 2025 0.54×, New Delhi 0.43× from §7). Cross-chain craters
+exactly in the over-subscribed Unite Defi bucket.
+
+### The playbook
+
+1. **Target a specialist sponsor** (earmark lift ≥ ~3×), not a generalist — that's where
+   category-specific prize money concentrates.
+2. **Enter at the category's first themed event, while it's still novel** (storage @ early
+   HackFS, agents @ Agentic Ethereum) — the alpha window is widest before the crowd arrives.
+3. **Avoid the saturation trap:** a themed event for a *cloneable, low-differentiation* task
+   (one-SDK cross-chain swaps) is *negative* alpha — earmarked money, but undifferentiated
+   supply. Differentiation matters more than the bounty.
+4. **Assume the edge decays.** By the time a category is a default at general events, its
+   lift has reverted to ≤ 1.0×. Alpha is a window, not a level.
+
+> Caveats: earmark lift is noisy for small themes (mitigated with a ≥15%-share / ≥8-prize
+> floor); themed-event premiums for pre-2023 events are unusable due to missing prize data;
+> decay cells use small per-bucket samples. Treat magnitudes as directional.
+
+---
+
 ## Methodology & reproducibility
 
 - **Pipeline:** `analyze_descriptions.py` — load → chronology/time-buckets → NLP tables
   & tech lexicon → embed (cached to `.cache_embeddings.npy`) → KMeans (k swept 12–32,
   silhouette-selected, `random_state=42`) → outlier flag (bottom 1.5% by cosine-to-
   centroid) → c-TF-IDF keywords → outputs.
+- **Sub-themes (§5):** `subcluster_themes.py` — sub-KMeans within the two largest themes
+  using the cached embeddings; writes `subcluster_summaries.json` and the `subtheme_label`
+  column. Sub-theme names live in `subtheme_labels.json` (edit + re-run to relabel).
+- **Prizes (§6):** computed from the `prizes` / `prize_count` columns, era-adjusted against
+  per-`time_bucket` baselines.
+- **Agent deep-dive (§7):** `agent_deepdive.py` — sub-clusters the agent theme and decomposes
+  its prize lift by sub-type, sponsor, and event; writes `agent_subclusters.json`.
+- **Sponsor-alpha model (§8):** `sponsor_alpha.py` — earmark scores, themed-event premium,
+  and decay curves; writes `sponsor_alpha.json`.
 - **Outputs:** `cluster_summaries.json` (per-cluster keywords + representatives),
-  `analysis_stats.json` (trends, n-grams, chronology), and
+  `analysis_stats.json` (trends, n-grams, chronology), `subcluster_summaries.json`, and
   **`ethglobal_projects_enriched.csv`** — every project tagged with `theme_label`,
-  `cluster_keywords`, `tech_tags`, `time_bucket`, `event_rank`, `is_outlier`,
-  `centroid_sim`. Theme names live in `cluster_labels.json` (edit + re-run to relabel;
-  embeddings are cached so it's instant and deterministic).
+  `subtheme_label`, `cluster_keywords`, `tech_tags`, `time_bucket`, `event_rank`,
+  `is_outlier`, `centroid_sim`. Theme names live in `cluster_labels.json` (edit + re-run to
+  relabel; embeddings are cached so it's instant and deterministic).
 - **Known limitations:** (1) `id` is a catalogue-order proxy, not exact dates — coarse
   trends only; (2) soft cluster boundaries (low silhouette) — themes overlap at the
   edges; (3) themed hackathons bias the mix; (4) ~1–2% junk submissions remain in the
@@ -167,5 +391,8 @@ the next theme might nucleate (much as lone AI experiments did before bucket 4).
 
 ### Suggested next steps
 - Scrape real event dates to replace the `id` proxy and get a true timeline.
-- Split the two largest themes (NFTs, payments) at higher k for finer sub-themes.
-- Cross-tabulate `theme_label` against `prizes` to see which themes actually *win*.
+- ~~Split the two largest themes at higher k for finer sub-themes~~ — done (§5).
+- ~~Cross-tabulate `theme_label` against `prizes`~~ — done (§6).
+- ~~Drill into the AI-agent over-performance~~ — done (§7): it's Coinbase + Agentic Ethereum.
+- ~~Generalize §7 into a sponsor-alpha model~~ — done (§8): specialists + novelty window − saturation.
+- Scrape real event dates + sponsor prize pools to turn the alpha window into a live, forward-looking signal.
