@@ -1,0 +1,548 @@
+[
+  {
+    "cluster_id": 5,
+    "size": 1112,
+    "share": 0.1356,
+    "keywords": [
+      "nfts nft",
+      "nft collection",
+      "nft creators",
+      "nfts nfts",
+      "nft nft",
+      "nft market",
+      "nft collections",
+      "nft game",
+      "sold",
+      "art nfts",
+      "nft marketplace",
+      "collection"
+    ],
+    "size_by_time_bucket": [
+      249,
+      441,
+      331,
+      32,
+      36,
+      23
+    ],
+    "representative_descriptions": [
+      "An NFT membership platform to support your favourite creators.",
+      "NFT creation, visualization, purchasing, and sharing platform.",
+      "NFTbase is the metaverse marketplace and community where you can buy, sell and create NFT items. We’ll make the world where human creativity is fully respected.",
+      "Creating NFT's from a creators perspective.",
+      "NFT asset Marketplace which lets creators compose multiple NFTs and create a new usable contract that streams value when consumers consume it and compensates the NFT owners in realtime.",
+      "A secondary marketplace for NFTs that is affordable, rewarding and enjoyable. 1) 0.5% Transaction Fees 2) Native Token Rewards 3) Stunning UX 4) Customisable Auctions",
+      "A multi-chain NFT marketplace and wallet where each user can buy NFTs by credit card and cash and can view their NFTs from different chains.",
+      "A one-stop shop for creators and fans to mint new NFT collections and add exclusive content for their NFT holders."
+    ],
+    "theme_label": "NFTs, collectibles & creator marketplaces",
+    "gloss": "NFT minting, marketplaces, collections and creator monetization."
+  },
+  {
+    "cluster_id": 3,
+    "size": 781,
+    "share": 0.0952,
+    "keywords": [
+      "autonomous ai",
+      "autonomous agents",
+      "ai agents",
+      "agent marketplace",
+      "protocol ai",
+      "ai portfolio",
+      "agent ai",
+      "autonomous trading",
+      "intelligent ai",
+      "code ai",
+      "market ai",
+      "advisor"
+    ],
+    "size_by_time_bucket": [
+      10,
+      4,
+      9,
+      395,
+      165,
+      198
+    ],
+    "representative_descriptions": [
+      "Decentralized, interoperable AI agent infrastructure showcased on the Agent Store, featuring Universal Web2/Web3-compatible Agent Entiyt.ID, Onchain Reputation/Rating, and Developer Verification/KYC",
+      "An AI agent that lets you invest in Real-World Assets just by talking to it.",
+      "AI agent which does your work of sending money to your friends on a simple prompt.",
+      "Lens: a real-time crypto AI agent. Discover metrics, sentiment, and create custom dashboards.",
+      "An AI-powered agent that analyzes social engagement, mints dynamic NFTs, and distributes tokens to incentivize viral content. Integrated with Coinbase AgentKit & Base for seamless onchain interactions.",
+      "A revolutionary platform where users bet on AI Agent battles! Watch as artificial minds compete across various challenges and games, proving their capabilities in a transparent, blockchain-verified environment.",
+      "Decentralized AI agent marketplace where developers monetize agents and users rented AI services.",
+      "On-chain AI Agent Platform is combines a sophisticated architecture of AI agents, DeFi mechanics, and cutting-edge Web3 tools to create a fully autonomous fund management platform."
+    ],
+    "theme_label": "AI agents & autonomous assistants",
+    "gloss": "Autonomous/agentic AI for trading, portfolios, ops and on-chain actions."
+  },
+  {
+    "cluster_id": 6,
+    "size": 779,
+    "share": 0.095,
+    "keywords": [
+      "sms",
+      "send receive",
+      "stripe",
+      "stablecoin payments",
+      "smart wallet",
+      "wallet wallet",
+      "phone",
+      "debit",
+      "pay token",
+      "mobile wallet",
+      "visa",
+      "nfc tap"
+    ],
+    "size_by_time_bucket": [
+      110,
+      74,
+      102,
+      130,
+      153,
+      210
+    ],
+    "representative_descriptions": [
+      "Settel: One-click crypto payments via email. No wallets, no fees, no complexity.",
+      "A universal payment layer: BTC security, PYUSD speed, ZK identity & seamless off-ramps.",
+      "Creating a first proof of concept of our user-owned, offline-first, encrypted by default subscription based crowdsourcing and crowdfunding marketplace, build on textile threads DB, IPFS and the CIRCLES universal basic income currency protocol",
+      "The Social Off-Ramp Debit Card. Allowing crypto users to off-ramp conveniently and  Tap & Go.",
+      "GhostLink: Anonymous, E2EE chat with direct crypto payments, built for World App.",
+      "A wallet that enables groups of friends to seamlessly manage shared expenses using cryptocurrency.",
+      "ZapPay — the PayPal for AI Agents, enabling safe, refundable, and autonomous stablecoin payments.",
+      "EmailPay — Send crypto through email. Simple, secure, and seedless Web3 payments."
+    ],
+    "theme_label": "Crypto payments, wallets & off-ramps",
+    "gloss": "Stablecoin payments, smart/mobile wallets, cards, SMS/email rails, off-ramps."
+  },
+  {
+    "cluster_id": 1,
+    "size": 713,
+    "share": 0.087,
+    "keywords": [
+      "forex",
+      "impermanent",
+      "credit delegation",
+      "collateralized",
+      "cross lending",
+      "perpetuals",
+      "lps",
+      "collateral",
+      "concentrated",
+      "impermanent loss",
+      "fixed rate",
+      "uncollateralized lending"
+    ],
+    "size_by_time_bucket": [
+      78,
+      60,
+      166,
+      87,
+      142,
+      180
+    ],
+    "representative_descriptions": [
+      "A yield-positive lending protocol that lets you borrow while earning from staked crypto.",
+      "Decentralized NFT collateralization platform with a vested escrow component that allows liquidity providers to earn rewards",
+      "Hyper capital efficient lending protocol, built on top of Uniswap hooks!",
+      "Tokenize real items; borrower funds earn yield, lender keeps interest + depreciation.",
+      "Unifying merchant payment layer. Accepts any stablecoin, settles in a single liquid asset vault.",
+      "Decentralized savings pools with transparent auctions powered by smart contracts.",
+      "Introducing Variety.Finance! We defend the interest of  Liquidity Providers (LPs) by developing LP Protection features for UniswapV2-like protocols and channeling savings into a treasury fund for LPs. In this way LPs benefit from the long term to offset impermanent loss.",
+      "Tokenized CDP (collateralized debt position) that is fungible and tradable on decentralized exchanges."
+    ],
+    "theme_label": "DeFi lending, perps & collateral",
+    "gloss": "Lending/borrowing protocols, perpetuals, collateralization, LP & impermanent-loss management."
+  },
+  {
+    "cluster_id": 0,
+    "size": 684,
+    "share": 0.0834,
+    "keywords": [
+      "testdata",
+      "testdata testdata",
+      "limit order",
+      "dust",
+      "limit",
+      "rpc",
+      "truffle",
+      "refueling",
+      "json",
+      "uniswap v3",
+      "twap",
+      "v3"
+    ],
+    "size_by_time_bucket": [
+      97,
+      58,
+      140,
+      87,
+      143,
+      159
+    ],
+    "representative_descriptions": [
+      "Live multichain explorer with real-time feeds and cross-chain actions. Built for ETHOnline 2025.",
+      "Seamless Web3 wallet: AI assistant, gasless ETH/ERC-20 swaps, real-time prices.",
+      "A drag-and-drop playground to visualize and execute cross-chain transactions on Avail Nexus.",
+      "Fireway is a cross-chain data oracle micro framework connecting real-world data and APIs to smart contracts",
+      "A trader-owned smart contract that enables advanced on-chain trades",
+      "BlockButler: Chat with your wallet, check balances, send ETH, deploy contracts by text effortlessly.",
+      "A dApp to enable cross chain value streaming and transfers.  Additionally it will allow inexpensive L1 Ethereum actions to be initiated from EVM L2s.",
+      "AI-powered on-chain inventory management system using CDP, The Graph & Nillion on Base. 🚀 Tracks stock levels, predicts restocks based on usage, & auto-restocks the best supplier for fast delivery. Fully autonomous or user-confirmed restocking for optimized supply chains!"
+    ],
+    "theme_label": "On-chain trading tools & dev infrastructure",
+    "gloss": "Explorers, RPC/oracle plumbing, limit-order & TWAP engines, dev tooling. (Keyword list polluted by 'testdata' junk submissions.)"
+  },
+  {
+    "cluster_id": 2,
+    "size": 672,
+    "share": 0.082,
+    "keywords": [
+      "tsete",
+      "tsete tstes",
+      "tstes",
+      "test test",
+      "tstes tsete",
+      "testing test",
+      "test testing",
+      "solves sudoku",
+      "character description",
+      "evangelion",
+      "description fit",
+      "280"
+    ],
+    "size_by_time_bucket": [
+      163,
+      165,
+      104,
+      95,
+      71,
+      74
+    ],
+    "representative_descriptions": [
+      "A social platform with an endless feed of memorable tokens, like photoalbum, that you can share with people with whom you've experienced some emotions or you're just in the same interest group",
+      "A public good, social platform built on a lens, that creates a new way for creators and their fans to blossom together using social tokens. Simple tokenomics with easy to use templates, user friendly UI experience and multimedia creation all in one place.",
+      "A platform for content creators to receive tips from their fans and in turn make an exclusive relationship with them.",
+      "A platform where communities, projects, or services can broadcast their existence and users looking for new communities, projects or services can find and join them.",
+      "A social meme app built with Lens Protocol where meme artists get rewarded with crypto for super fun content and brands can organize memethon to crowdsource memes from the best artists.",
+      "CivitasDAO connect communities with Content Creators giving new ways to interact.",
+      "We're going to use Lens Protocol and its NFT profile/post/comments/mirrors concepts for our social graph/add-on built on top of this protocol!",
+      "An app to help digital nomads and tourists learn more about a new place with the help of locals and a place for local residents to monetize their knowledge."
+    ],
+    "theme_label": "Creator & social-token platforms",
+    "gloss": "Social feeds, tipping, meme/creator tokens, Lens-based apps. (Keywords show 'tsete/test' spam submissions.)"
+  },
+  {
+    "cluster_id": 8,
+    "size": 581,
+    "share": 0.0709,
+    "keywords": [
+      "charitable",
+      "dummy",
+      "crowdfunding",
+      "milestones",
+      "dummy dummy",
+      "retroactive",
+      "donations",
+      "surveys",
+      "kickstarter",
+      "monetary",
+      "crowd funding",
+      "reward token"
+    ],
+    "size_by_time_bucket": [
+      116,
+      101,
+      132,
+      86,
+      69,
+      77
+    ],
+    "representative_descriptions": [
+      "My main aim is to build a decentralized social media and NFT marketplace ,where creators get rewarded via tokens for participation.",
+      "A kickstarter-like crowd funding blockchain website. Users can request for funds to be approved and sent on the blockchain.",
+      "Rewards open-source contributor, now distribute funds fairly and transparently",
+      "A platform for creators to tokenize, monetize, and build reputation with their artwork.",
+      "A platform where people can support their favourite creators. To support creators they stake some amount in the creator's pool, this complete amount can be withdrawn and creators get the interest generated!",
+      "We are building a platform to enable creators to monetize through token-gated access to their content and community",
+      "A decentralized  social media platform for content creators and a donation app built on polygon for giving tokens to your favorite creator, project, or meme lord.",
+      "A creative blockchain platform for independent creators and brands to exchange services directly and earn incentives through the use of"
+    ],
+    "theme_label": "Crowdfunding, donations & creator monetization",
+    "gloss": "Kickstarter-style funding, charitable giving, retroactive/public-goods rewards."
+  },
+  {
+    "cluster_id": 7,
+    "size": 538,
+    "share": 0.0656,
+    "keywords": [
+      "dropbox",
+      "video sharing",
+      "file sharing",
+      "articles",
+      "image sharing",
+      "google drive",
+      "filecoin ipfs",
+      "ipfs",
+      "cloud",
+      "ipfs search",
+      "filesystem",
+      "published ipfs"
+    ],
+    "size_by_time_bucket": [
+      142,
+      68,
+      121,
+      92,
+      54,
+      61
+    ],
+    "representative_descriptions": [
+      "A decentralized file-sharing platform to let creators securely monetize their digital content.",
+      "A decentralized service to upload and share content with anyone",
+      "A decentralized content platform/community which reward authors and valuable readers with FileCoin. We storage articles on ipfs/filecoin to avoid boring 404.",
+      "A decentralized CDN platform that enables anyone to serve content and get paid for it!",
+      "The decentralized content delivery based on IPFS for internet service providers (ISPs).",
+      "Decentralized streaming platform, allowing content creators and users to interact directly.",
+      "Decentralized hub to store, smartly-organize & share files, notes, and knowledge securely.",
+      "Decentralized database made for Dapps, built on top of ceramic and IPFS."
+    ],
+    "theme_label": "Decentralized storage & content sharing",
+    "gloss": "IPFS/Filecoin file sharing, decentralized CDN, content monetization."
+  },
+  {
+    "cluster_id": 13,
+    "size": 531,
+    "share": 0.0648,
+    "keywords": [
+      "clear signing",
+      "tamper",
+      "identity verification",
+      "knowledge proofs",
+      "stealth",
+      "tamper proof",
+      "stealth addresses",
+      "privacy preserving",
+      "anonymous",
+      "id identity",
+      "uses zero",
+      "revealing"
+    ],
+    "size_by_time_bucket": [
+      85,
+      38,
+      33,
+      120,
+      109,
+      146
+    ],
+    "representative_descriptions": [
+      "Zk based  Reputation platform: zk-proof credentials, ENS, peer voting, and Self id verification.",
+      "Anonymous, secure, verifiable marketplace with ZKPs, stealth addresses & PYUSD payments.",
+      "SubsCrypt: Private, anonymous on-chain subscription payments via ZK-proofs and EIP-7702 automation.",
+      "A ZK Identity prover which protects and preserves privacy of user",
+      "Internet Verifiable Markets, using ZK proofs (Self.xyz), Lighthouse and zkEmail.",
+      "Basic Idea: Using zkProofs to have a private trust score for merchants on market places. Pivoted into modules built on top of NFT auctions for attack (sniping bot) and defense (commit reveal).",
+      "“Future-Protocol: A trustless time-locked vault with zkProofs + DID identity for secure data unlocks",
+      "A zk-whistleblowing platform enabling secure, verifiable and anonymous disclure of sensitive data"
+    ],
+    "theme_label": "ZK identity, privacy & verifiable reputation",
+    "gloss": "Zero-knowledge proofs, stealth addresses, privacy-preserving identity, credentials & reputation."
+  },
+  {
+    "cluster_id": 10,
+    "size": 477,
+    "share": 0.0582,
+    "keywords": [
+      "text text",
+      "web2 social",
+      "web2",
+      "surveys",
+      "web2 companies",
+      "video conferencing",
+      "market3",
+      "bridges web2",
+      "tripleeet",
+      "livepeer api",
+      "conferencing",
+      "google forms"
+    ],
+    "size_by_time_bucket": [
+      158,
+      127,
+      45,
+      68,
+      38,
+      41
+    ],
+    "representative_descriptions": [
+      "Web3-first social media platform where transactions are first-class citizens! Follow your friends, celebrities, and randos! Show off your most recent on-chain activity!",
+      "A powerful social portal for creators and investors to web3 with subscription models, token gating, analytics, dashboards, cutting edge UI/UX, NFT, DEFI, as well as gamified experiences to suit creators and consumers alike.",
+      "The professional network that pays users to get jobs, and find like-minded people to build the future of Web3 they dream of together.",
+      "A decentralised social network for web3 creators. Developers, designers, artists everyone is welcome on our platform to create the next big thing seamlessly",
+      "A decentralized social platform for web3 developers to connect and help each other grow through questions and answers.",
+      "A social platform designed for remote/Web3 spaces to look for coworking partners, where people can build up the Lens Profiles and accumulate reputations for working experience in the Web3 space while protecting privacy with zero-knowledge proof.",
+      "We are trying to bridge the gap between organizations and skilled people in web3. You can think of it as a decentralized society of professionals, who can interact with each other in a decentralized manner.",
+      "A Web3 social media platform which helps content creators to build multiple revenue streams for attaining financial freedom."
+    ],
+    "theme_label": "Web3 social networks & web2 bridges",
+    "gloss": "Web3-native social/professional networks and web2-to-web3 connectors."
+  },
+  {
+    "cluster_id": 12,
+    "size": 431,
+    "share": 0.0526,
+    "keywords": [
+      "chess",
+      "multiplayer",
+      "game play",
+      "players stake",
+      "winner takes",
+      "strategy game",
+      "rpg",
+      "game hedera",
+      "aquatic",
+      "dungeon",
+      "winner",
+      "casino"
+    ],
+    "size_by_time_bucket": [
+      49,
+      85,
+      63,
+      68,
+      63,
+      103
+    ],
+    "representative_descriptions": [
+      "On-chain gaming platform where players stake crypto to battle AI, and compete for prize pools.",
+      "Wordle game on blockchain & IPFS. With composable NFTs and win-to-earn game strategies :)",
+      "A crypto-native auto battler game that lives entirely on the blockchain - from knight creation to tournament simulation. Using Chainlink VRF to provide verifiable randomness to the blockchain we can ensure fairness for all.",
+      "Experimental blockchain game playable with interactive crypto-collectibles (NFTs) running on ethereum.",
+      "OG-Lounge: Create, own & trade AI-powered blockchain games with true on-chain fairness.",
+      "Our project is an onchain fantasy game where an autonomous agent acts as the Game Master. It creates levels, assigns challenges, and evaluates player progress. Levels are stored securely in Nillion’s SecretVault, ensuring fairness. As players advance, difficulty increases.",
+      "Quiz game that can be embedded in any blockchain project to give advantages to real people and discourage bots. Playing with real people are more fun!",
+      "Blockchain card battle game powered by live Pyth price feeds and provably fair randomness"
+    ],
+    "theme_label": "On-chain gaming & play-to-earn",
+    "gloss": "Crypto-native games, staking-to-play, NFT collectibles, tournaments."
+  },
+  {
+    "cluster_id": 9,
+    "size": 321,
+    "share": 0.0391,
+    "keywords": [
+      "defi portfolio",
+      "defi yield",
+      "ai defi",
+      "defi strategies",
+      "defi strategy",
+      "defi lending",
+      "defi trading",
+      "defi dashboard",
+      "multi defi",
+      "defi insurance",
+      "cross defi",
+      "automated defi"
+    ],
+    "size_by_time_bucket": [
+      23,
+      17,
+      69,
+      70,
+      76,
+      66
+    ],
+    "representative_descriptions": [
+      "Defi platform providing real-world assets exposure without letting go of crypto; with an LP pool between assets in the same class, allowing yield without having to trust one oracle/custodian.",
+      "An AI-powered DeFi portfolio manager optimizing yield farming & flash loan arbitrage across Aave, Compound, and Uniswap V3. Built with Coinbase AgentKit, Privy, and deployed on Base for max returns.",
+      "Multi-chain DeFi Protocol that will allow regular users & professionals to create automated crypto portfolios, indexes and other financial products in a few simple clicks. We utilize modern portfolio theory and yield farming to deliver additional yield.",
+      "A DeFi plus DeSo platform to solve all of you money management and investing issues.",
+      "SPQRFi: AI powered DeFi made easy just connect, deposit, and let smart agents grow your funds.",
+      "AI-assisted DeFi trading infrastructure for institutional investors and asset managers",
+      "A project to provide stable quick turn around yields on your DeFi Protocol investements",
+      "Cross-chain DeFi investing, simplified by AI. No hopping around chains, no missed opportunities."
+    ],
+    "theme_label": "DeFi portfolio & yield automation",
+    "gloss": "AI-assisted DeFi dashboards, automated yield/portfolio strategies across protocols."
+  },
+  {
+    "cluster_id": 11,
+    "size": 299,
+    "share": 0.0365,
+    "keywords": [
+      "atomic swaps",
+      "cross atomic",
+      "stellar",
+      "swaps evm",
+      "atomic swap",
+      "monad",
+      "aptos",
+      "htlcs",
+      "cross swap",
+      "fusion cross",
+      "atomic",
+      "sui"
+    ],
+    "size_by_time_bucket": [
+      6,
+      6,
+      17,
+      11,
+      239,
+      20
+    ],
+    "representative_descriptions": [
+      "A novel extension for 1inch Cross-chain Swap (Fusion+) that enables swaps between Ethereum and Sui.",
+      "Cross-chain swapper using 1inch Fusion+ & Stellar for seamless swaps, bridges & transaction trails.",
+      "1inch Cross-chain Swap (Fusion+) that enables trustless atomic swaps Ethereum & Cosmos",
+      "Cross-chain swaps between Stellar & Ethereum with 1inch Fusion+ - fast, secure, gasless.",
+      "A cross-chain atomic swap solution between Ethereum and NEAR using 1inch Fusion+.",
+      "A sui 1inch Fusion+ Extension for make atomic cross chain swaps between Sui and Ethereum",
+      "dApp for trustless ETH-NEAR cross-chain swaps, leveraging 1inch Fusion+ protocol.",
+      "Seamless cross-chain swaps via 1inch Fusion: ETH ↔  XRPL, Cardano with atomic security."
+    ],
+    "theme_label": "Cross-chain atomic swaps (1inch Fusion+)",
+    "gloss": "Trustless cross-chain swaps, mostly 1inch Fusion+ extensions to non-EVM chains; a prize-driven burst."
+  },
+  {
+    "cluster_id": 4,
+    "size": 281,
+    "share": 0.0343,
+    "keywords": [
+      "dao dao",
+      "dao members",
+      "fractal dao",
+      "dao fractal",
+      "dao tool",
+      "dao treasury",
+      "proposal",
+      "dao",
+      "daos",
+      "dao governance",
+      "dao proposals",
+      "protocol dao"
+    ],
+    "size_by_time_bucket": [
+      81,
+      123,
+      34,
+      26,
+      8,
+      9
+    ],
+    "representative_descriptions": [
+      "DAO Infrastructure for Talent, Events and Business Management",
+      "Platform for managing DAOs. Users can find the list of members and the list of upcoming events for their DAO.",
+      "A decentralized launchpad for DAOs. From education to tools this is made for everyone.",
+      "A DAO education & onboarding platform serving two user groups: (1) users (web2 & web3) to discover, learn about, and eventually join DAOs with a fiat on-ramp & (2) DAO communities to introduce themselves & attract engaged, mission-aligned individuals to join them.",
+      "DaoSurv is an analytic DAO tooling. aim to capture the public feedback to enhance DAO project decisions. We offer SURVeillance (monitor and alert), SURVey (announce governance proposal), and insightful analytics to iteratively improve the DAO, SURViving long-term success.",
+      "A flexible and adaptable DAO implementation",
+      "A decentralized Dao Review platform, where one can give review to the dao and helping community, and daos can get reviewed to assess themselves",
+      "We are building a DAO investment platform by the people for the people and to the people"
+    ],
+    "theme_label": "DAO tooling & governance",
+    "gloss": "DAO management, treasuries, proposals, voting and onboarding."
+  }
+]
